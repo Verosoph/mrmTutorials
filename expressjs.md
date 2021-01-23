@@ -42,7 +42,7 @@ app.get('/', function (req, res) {
 app.listen(5000);
 ```
 
-### Mit Ausgabe das der Server gestartet ist und dem port angegben während der Entwicklung
+### Mit Ausgabe das der Server gestartet ist und dem port angegeben während der Entwicklung
 ```
 // Listen on a port (more beautiful)
 const PORT = process.env.PORT || 5000;
@@ -94,7 +94,7 @@ durch:
 ```
 Nun müsste man jedes File einzeln als route angeben, damit man sich genau das sparen kann gib es in express static folders, sodas man eine Directory static setzen kann und alle darin enthaltenen files kann man in der url angeben und sie werden geladen.
 
-Wir ersetzen inder index.js
+Wir ersetzen in der index.js
 ```
 //Create the endpoints/route handlers
 app.get('/', function (req, res) {
@@ -112,7 +112,7 @@ Zum Testen kann man eine zweites File anlegen about.html und versuchen dies übe
 
 Auch ist es so möglich, so css files oder script files für die Seite zu hinterlegen und diese ganz normal im Kopf der html Seite einzubinden.
 
-## Very Simple Rest API
+## Very Simple Rest API - alle memebers zurückgeben
 
 Es soll zunächst ein einfaches array als Json zurüchgegben werden wen man den endpoint aufruft.
 dazu wird statisch mal ein array erzeugt in der index.js
@@ -198,6 +198,69 @@ Und diese lässt sich dann als Middleware nutzen:
 ```
 app.use(logger);
 ```
+Führt man jetzt ein get request auf der url aus, erscheint ein "Hello" in der Konsole.
+
+Man könnte sicher hier über die logger Funktion z.B. die aufgerufene url ausgeben lassen:
+```
+console.log(`${req.protocol}://${req.get('host')}${req.originalUrl}`);
+```
+ACHTUNG dabei ist das Hochkomma ein solches: " ` " (sind Backticks)
+
+Nun könnte man sich noch Datum und Zeit anzeigen lassen, dazu kann man das Module "moment" nutzen
+Dies kann über:
+```
+npm install moment
+```
+installiert werden.
+
+In die index.js eingebunden:
+```
+const moment = require('moment');
+```
+Und verwendet werden:
+```
+console.log(`${moment().format()}`);
+```
+Nun wird bei Abfrage der Url zusätzlich noch Datum und Zeit angezeigt.
+Mann könnte nun mit Hilfe vom fs-module das Ganze in ein File schreiben und hätte so schon einen simplen logger der jeden call der api loggt.
+
+Der Schöneheit halber packen wir diese Middelware nun noch in ein eigenes Verzeichnis und File.
+
+## Very Simple Rest API Part 2 - einen memeber zurückgeben
+Statt alle members in dem members Model zurückzugeben kann man natütlich einzeln members abfragen.
+```
+// Get Singel Member
+app.get('/api/members/:id', (req, res) => {
+    res.send(req.params.id);
+});
+```
+Mit req.params lassen sich alle Parameter ansprechen die man der Url mitgibt. Bei einem aufruf von "http://localhost:5000/api/members/43" wird also 43 zurückgegeben.
+Dies kann man nun nutzem um nach den Daten in dem Membersobjekt zu suchen indem man folgendes ändert:
+```
+// Get Singel Member
+app.get('/api/members/:id', (req, res) => {
+    res.json(members.filter(members => members.id === parseInt(req.params.id)));
+});
+```
+Die Filterfunktion auf dem member array sucht nach dem übergebenen parameter req.params.id, und gibt diese als json zurück. Dabei castet parseInt den wert in ein int weil es in der url als string übergeben wird und im Membersobjekt als int enthalten ist, sonst würde das === nicht funktionieren. 
+
+Ist die ID nicht vorhanden, wird nix zurückgegeben, das kann man ändern in dem man eine message zurück gibt, wenn keine ID gefunden wurde.
+Wir erweitern :
+```
+// Get Singel Member
+app.get('/api/members/:id', (req, res) => {
+    const found = members.some(member => member.id === parseInt(req.params.id));
+
+    if(found) {
+        res.json(members.filter(members => members.id === parseInt(req.params.id)));        
+    } else {
+        res.status(400).json ({msg: `No member with the id of ${req.params.id}`});    
+    }
+});
+```
+Found ist ein bool und .some eine Funktion auf dem Membersobjekt die einfach true ode false zurückgibt wenn die angegeben id exisitert.
+Mit res.status kann ein Errorcode (also 400 = bad request) zurückgegben werden mit einer Message als json. Hier wieder in Backticks um die id in der Message mitzuliefern.
+
 
 
 
