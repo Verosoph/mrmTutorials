@@ -225,8 +225,13 @@ Nun wird bei Abfrage der Url zusätzlich noch Datum und Zeit angezeigt.
 Mann könnte nun mit Hilfe vom fs-module das Ganze in ein File schreiben und hätte so schon einen simplen logger der jeden call der api loggt.
 
 Der Schöneheit halber packen wir diese Middelware nun noch in ein eigenes Verzeichnis und File.
+* Verzeichnis und File erstellen
+* code der Funktion ins neu File packen
+* module.exports = ... (zum exportien)
+* in index wieder einbinden mit const ... = require ('./verzeichnis/filename)
 
-## Very Simple Rest API Part 2 - einen memeber zurückgeben
+
+## Very Simple Rest API Part 2 - einen member zurückgeben
 Statt alle members in dem members Model zurückzugeben kann man natütlich einzeln members abfragen.
 ```
 // Get Singel Member
