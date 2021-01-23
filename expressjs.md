@@ -1,5 +1,14 @@
 # Express.js
 
+## Quelle
+- Express Crash Course
+    - https://github.com/bradtraversy/express_crash_course
+    - https://www.youtube.com/watch?v=L72fhGm1tfE&ab_channel=TraversyMedia
+
+## Dokumentation
+
+http://expressjs.com/de/
+
 ## Start
 Erstellen eines package.json Files
 ```
@@ -17,15 +26,19 @@ Erstellen des initialen files app.js oder index.js oder wie auch immer.
 ## Basic Server Syntax
 
 ```
-// init express
+//include module
+const express = require('express')
+
+//init express
 const app = express();
 
-//Create the endpoints/route handlers
+//create the endpoints/route handlers
 app.get('/', function (req, res) {
     res.send('Hello World');
 });
 
-// Listen on a port
+
+//listen on a port
 app.listen(5000);
 ```
 
@@ -63,9 +76,132 @@ Gestarted wird der Server dann mit:
 ```
 npm run dev
 ```
-## Dokumentation
+## Routing
+Es wird ein Verzeichnis /public erstellt und die darin enthaltene start.html soll als Startpage angezeigt werden.
+Wir laden das module 'path' (die ist ein node.js module) in die index.js, welches das laden von Pfaden ermöglicht:
+```
+const path = require('path');
+```
 
-http://expressjs.com/de/
+Wir ersetzten in der index.js:
+```
+    res.send('Hello World');
+```
+durch:
+
+```
+    res.sendFile(path.join(__dirname, 'public', 'start.html'));
+```
+Nun müsste man jedes File einzeln als route angeben, damit man sich genau das sparen kann gib es in express static folders, sodas man eine Directory static setzen kann und alle darin enthaltenen files kann man in der url angeben und sie werden geladen.
+
+Wir ersetzen inder index.js
+```
+//Create the endpoints/route handlers
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, 'public', 'start.html'));
+});
+```
+durch:
+```
+// Set static folder
+app.use(express.static(path.join(__dirname, 'public')));
+```
+Damit erreiche ich die Seite start.html entweder einfach über den "homepage"-pfad also "/" oder wenn ein weiteres File im Verzeichnis /public liegt dann über den kompletten Dateinamen also /start.html
+
+Zum Testen kann man eine zweites File anlegen about.html und versuchen dies über die url zu erreichen.
+
+Auch ist es so möglich, so css files oder script files für die Seite zu hinterlegen und diese ganz normal im Kopf der html Seite einzubinden.
+
+## Very Simple Rest API
+
+Es soll zunächst ein einfaches array als Json zurüchgegben werden wen man den endpoint aufruft.
+dazu wird statisch mal ein array erzeugt in der index.js
+```
+//array of members
+const members = [
+    {
+        id: 1,
+        name; 'John Doe',
+        email: 'john@gmail.com',
+        status: 'active' 
+    },
+    {
+        id: 2,
+        name; 'Hans Peter',
+        email: 'hans@gmail.com',
+        status: 'active' 
+    },
+    {
+        id: 3,
+        name; 'Fritz Summer',
+        email: 'fritz@gmail.com',
+        status: 'inactive' 
+    }
+]
+
+
+```
+Nun erstellt man ein route in index.js
+```
+app.get('/api/members', (req, res) {
+    res.json(members);
+})
+```
+* app.get - wir erwarten ein get request an dem endpoint
+* res.json - gibt das array im json format zurück
+
+## Code in file auslagern
+Der Übersicht halber lassen sich Teile des codes jederzeit auslagern. 
+Als Beispiel wird das Members-Array ausgelagert in ein eingenes File mit dem Namem Members.js (groß, weil es ein Model ist).
+Man erstellt das File, packt das Array rein und exportiert es:
+```
+//array of members
+const members = [
+    {
+        id: 1,
+        name: 'John Doe',
+        email: 'john@gmail.com',
+        status: 'active' 
+    },
+    {
+        id: 2,
+        name: 'Hans Peter',
+        email: 'hans@gmail.com',
+        status: 'active' 
+    },
+    {
+        id: 3,
+        name: 'Fritz Summer',
+        email: 'fritz@gmail.com',
+        status: 'inactive' 
+    }
+];
+
+module.exports = members;
+```
+Nun kann man es wieder in die index.js importieren
+```
+const members = require('./Memebers);
+```
+
+## Eine einfache Middleware-Funktion erstellen
+Das ist im Grunde nichts anderes als eine Funktion die ausgeführt wird, wenn die app aufgerufen wird bzw. wenn ein Endpoint der api angesprochen wird. Damit lässt sich so gut wie alles machen. (der vergleich hinkt arg, aber ähnlich wie ein Constructor beim instanzieren eine Klasse)
+
+Es wir also eine Funktion in der index.js (oder in einem File und man bindet es ein, wie oben) erstellt:
+```
+const logger = (req, res, next) => {
+    console.log('Hello);
+    next();
+}
+```
+Und diese lässt sich dann als Middleware nutzen:
+```
+app.use(logger);
+```
+
+
+
+
 
 ## Hilfreiche Links
 
