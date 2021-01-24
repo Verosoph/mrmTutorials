@@ -25,7 +25,7 @@ Erstellen des initialen files app.js oder index.js oder wie auch immer.
 
 ## Basic Server Syntax
 
-```
+```javascript
 //include module
 const express = require('express')
 
@@ -43,7 +43,7 @@ app.listen(5000);
 ```
 
 ### Mit Ausgabe das der Server gestartet ist und dem port angegeben während der Entwicklung
-```
+```javascript
 // Listen on a port (more beautiful)
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, ()=> console.log('Server started on port ${PORT}));
@@ -79,30 +79,30 @@ npm run dev
 ## Routing
 Es wird ein Verzeichnis /public erstellt und die darin enthaltene start.html soll als Startpage angezeigt werden.
 Wir laden das module 'path' (die ist ein node.js module) in die index.js, welches das laden von Pfaden ermöglicht:
-```
+```javascript
 const path = require('path');
 ```
 
 Wir ersetzten in der index.js:
-```
+```javascript
     res.send('Hello World');
 ```
 durch:
 
-```
+```javascript
     res.sendFile(path.join(__dirname, 'public', 'start.html'));
 ```
 Nun müsste man jedes File einzeln als route angeben, damit man sich genau das sparen kann gib es in express static folders, sodas man eine Directory static setzen kann und alle darin enthaltenen files kann man in der url angeben und sie werden geladen.
 
 Wir ersetzen in der index.js
-```
+```javascript
 //Create the endpoints/route handlers
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, 'public', 'start.html'));
 });
 ```
 durch:
-```
+```javascript
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 ```
@@ -112,11 +112,11 @@ Zum Testen kann man eine zweites File anlegen about.html und versuchen dies übe
 
 Auch ist es so möglich, so css files oder script files für die Seite zu hinterlegen und diese ganz normal im Kopf der html Seite einzubinden.
 
-## Very Simple Rest API - alle memebers zurückgeben
+## Very Simple Rest API - alle members zurückgeben
 
 Es soll zunächst ein einfaches array als Json zurüchgegben werden wen man den endpoint aufruft.
 dazu wird statisch mal ein array erzeugt in der index.js
-```
+```javascript
 //array of members
 const members = [
     {
@@ -142,7 +142,7 @@ const members = [
 
 ```
 Nun erstellt man ein route in index.js
-```
+```javascript
 app.get('/api/members', (req, res) {
     res.json(members);
 })
@@ -154,7 +154,7 @@ app.get('/api/members', (req, res) {
 Der Übersicht halber lassen sich Teile des codes jederzeit auslagern. 
 Als Beispiel wird das Members-Array ausgelagert in ein eingenes File mit dem Namem Members.js (groß, weil es ein Model ist).
 Man erstellt das File, packt das Array rein und exportiert es:
-```
+```javascript
 //array of members
 const members = [
     {
@@ -180,28 +180,28 @@ const members = [
 module.exports = members;
 ```
 Nun kann man es wieder in die index.js importieren
-```
-const members = require('./Memebers);
+```javascript
+const members = require('./Members);
 ```
 
 ## Eine einfache Middleware-Funktion erstellen
 Das ist im Grunde nichts anderes als eine Funktion die ausgeführt wird, wenn die app aufgerufen wird bzw. wenn ein Endpoint der api angesprochen wird. Damit lässt sich so gut wie alles machen. (der vergleich hinkt arg, aber ähnlich wie ein Constructor beim instanzieren eine Klasse)
 
 Es wir also eine Funktion in der index.js (oder in einem File und man bindet es ein, wie oben) erstellt:
-```
+```javascript
 const logger = (req, res, next) => {
     console.log('Hello);
     next();
 }
 ```
 Und diese lässt sich dann als Middleware nutzen:
-```
+```javascript
 app.use(logger);
 ```
 Führt man jetzt ein get request auf der url aus, erscheint ein "Hello" in der Konsole.
 
 Man könnte sicher hier über die logger Funktion z.B. die aufgerufene url ausgeben lassen:
-```
+```javascript
 console.log(`${req.protocol}://${req.get('host')}${req.originalUrl}`);
 ```
 ACHTUNG dabei ist das Hochkomma ein solches: " ` " (sind Backticks)
@@ -214,11 +214,11 @@ npm install moment
 installiert werden.
 
 In die index.js eingebunden:
-```
+```javascript
 const moment = require('moment');
 ```
 Und verwendet werden:
-```
+```javascript
 console.log(`${moment().format()}`);
 ```
 Nun wird bei Abfrage der Url zusätzlich noch Datum und Zeit angezeigt.
@@ -233,7 +233,7 @@ Der Schöneheit halber packen wir diese Middelware nun noch in ein eigenes Verze
 
 ## Very Simple Rest API Part 2 - einen member zurückgeben
 Statt alle members in dem members Model zurückzugeben kann man natütlich einzeln members abfragen.
-```
+```javascript
 // Get Singel Member
 app.get('/api/members/:id', (req, res) => {
     res.send(req.params.id);
@@ -241,7 +241,7 @@ app.get('/api/members/:id', (req, res) => {
 ```
 Mit req.params lassen sich alle Parameter ansprechen die man der Url mitgibt. Bei einem aufruf von "http://localhost:5000/api/members/43" wird also 43 zurückgegeben.
 Dies kann man nun nutzem um nach den Daten in dem Membersobjekt zu suchen indem man folgendes ändert:
-```
+```javascript
 // Get Singel Member
 app.get('/api/members/:id', (req, res) => {
     res.json(members.filter(members => members.id === parseInt(req.params.id)));
@@ -251,7 +251,7 @@ Die Filterfunktion auf dem member array sucht nach dem übergebenen parameter re
 
 Ist die ID nicht vorhanden, wird nix zurückgegeben, das kann man ändern in dem man eine message zurück gibt, wenn keine ID gefunden wurde.
 Wir erweitern :
-```
+```javascript
 // Get Singel Member
 app.get('/api/members/:id', (req, res) => {
     const found = members.some(member => member.id === parseInt(req.params.id));
@@ -265,6 +265,186 @@ app.get('/api/members/:id', (req, res) => {
 ```
 Found ist ein bool und .some eine Funktion auf dem Membersobjekt die einfach true ode false zurückgibt wenn die angegeben id exisitert.
 Mit res.status kann ein Errorcode (also 400 = bad request) zurückgegben werden mit einer Message als json. Hier wieder in Backticks um die id in der Message mitzuliefern.
+
+## Code aufräumen - routes auslagern
+Um Ordnung in den code zu bringen lassen sich die routes auslagern.  
+Es wird ein neues Verzeichnis "routes/api" erstellt und darin das file members.js welche die endpoints für die api enthalten soll.  
+Nun verschiebt man: 
+```javascript
+// Get Singel Member
+app.get('/api/members/:id', (req, res) => {
+    const found = members.some(member => member.id === parseInt(req.params.id));
+
+    if(found) {
+        res.json(members.filter(members => members.id === parseInt(req.params.id)));        
+    } else {
+        res.status(400).json ({msg: `No member with the id of ${req.params.id}`});    
+    }
+});
+
+// simple RestApi
+app.get('/api/members',  (req, res) => {
+    res.json(members);
+})
+```
+aus index.js in das neue File.
+
+Ebenso:
+```javascript
+const members = require('./Members');
+```
+wobei man hier drauf achten muss, das Members jetzt gefunden wird, denn der ausgangspunkt der neuen members.js ist ein anderer, also muss man den Pfad anpassen.
+
+Außerdem nutzen wir express, was eingefügt werden muss:
+```javascript
+const express = require('express');
+```
+Und wir nutzen router:
+```javascript
+const router = express.Router();
+```
+Wir nutzen nun router anstatt app was man ändern muss:
+```javascript
+// Get Singel Member
+router.get('/api/members/:id', (req, res) => {
+    const found = members.some(member => member.id === parseInt(req.params.id));
+
+    if(found) {
+        res.json(members.filter(members => members.id === parseInt(req.params.id)));        
+    } else {
+        res.status(400).json ({msg: `No member with the id of ${req.params.id}`});    
+    }
+});
+
+// simple RestApi
+router.get('/api/members',  (req, res) => {
+    res.json(members);
+})
+```
+Nun noch exportieren:
+```javascript
+module.exports = router;
+```
+Um das nun nutzen zu können wir die route nun noch in der index.js bekannt gemacht:
+```javascript
+app.use('/api/members', require('./routes/api/members'));
+```
+Es wird also hier erst die route angeben und dann auf das file verwiesen was er bei aufruf dieser route verwenden soll.
+Deshalb kann man nun auch in der routes/api/members.js die routes weglassen, das schaut dann so aus:
+```javascript
+// Get Singel Member
+router.get('/:id', (req, res) => {
+    const found = members.some(member => member.id === parseInt(req.params.id));
+
+    if(found) {
+        res.json(members.filter(members => members.id === parseInt(req.params.id)));        
+    } else {
+        res.status(400).json ({msg: `No member with the id of ${req.params.id}`});    
+    }
+});
+
+// simple RestApi
+router.get('/',  (req, res) => {
+    res.json(members);
+})
+```
+## Einen neuen Eintrag hinzufügen
+Wann immer man etwas an eine api schicken will nutzen man normalerweise "post".
+Hier der code für die "routes/api/members.js"
+```javascript
+router.post('/', (req, res) => {
+    res.send(req.body)
+});
+```
+Zunächst eine einfach Arrowfuction die das zurückgibt was wir senden.  
+Öffnet man nun postman:
+* erstellt einen neun tab als post request
+* an die adresse http://localhost:5000/api/members
+* setzt nun unter headers:  
+
+| key        | value           |
+|------------|-------          |
+|Content-Type| application/json|
+
+* und unter body den type "raw"
+* so kann man dort ein json-Objekt eintragen was man senden möchte
+* wie nehmen hier name und email:
+```
+{
+c
+}
+```
+Und schickt man das ab, passiert ... nix !!!
+Wir send zurück mit res.send ein req.body und dazu braucht man einen Bodyparser der als Modul in express vorhanden ist, den man aber noch nutzen muss.  
+In der index.js fügen wir nun eine neue Middleware ein.
+```Javascript
+app.use(express.json)));
+```
+Nun sollte man ein response sehen.  
+Was nun aber in unserer Arrowfunction passieren soll ist, dass ein neues Member-Objekt erstellt wird und dieses an das bestehende Members Array angehängt wird.  
+Also in etwa so:
+```javascript
+router.post('/', (req, res) => {
+    const newMember = {
+        "id" : " ... ",
+        "name": "Harald Kannnix",
+        "email": "harald@gmail.com",
+        "status": "activ"
+    }
+})
+```
+Damit die ID automatisch generiert wird ( wie es die datenbanken normal selbständig tun) kann man sich hier des Paketes "uuid" behelfen, was eine random id generiert.
+```
+npm install uuid
+```
+Hinzufügen in die routes/api/members.js
+```javascript
+const uuid = require('uuid');
+```
+Dies kann man dann für die id verwenden, für name und email nutze wir was gesendet wird und zugriff darauf gibt es über req.body.name bzw. req.body.email
+```javascript
+router.post('/', (req, res) => {
+    const newMember = {
+        id : uuid.v4(),
+        name: req.body.name,
+        email: req.body.email,
+        status: 'activ'
+    }
+})
+```
+Nun fangen wir noch den Fehler ab das email und name auch gesendet werden und hängen dann das ganze mit .push an das array dran. Und geben das komplette Membersarray zurück zur Kontrolle.
+```javascript
+router.post('/', (req, res) => {
+    const newMember = {
+        id : uuid.v4(),
+        name: req.body.name,
+        email: req.body.email,
+        status: 'activ'
+    }
+
+    if(!newMember.name || !newMember.email) {
+        return res.status(400).json({msg: 'Please include a name and email'});
+    }
+
+    members.push(NewMember);
+    res.json(members);
+})
+```
+Fettes **ACHTUNG !!!** and dieser Stelle !
+Sollte es zu Fehlern kommen wie "name undefined" oder sollte er überhaut Teile des Codes nicht finden, dann kann es daran liegen wann und wo in der index.js Middleware etc geladen wird. Da sollte man auf die Reihenfolge achten!
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
