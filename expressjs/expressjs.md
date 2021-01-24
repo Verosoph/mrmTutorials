@@ -433,12 +433,49 @@ router.post('/', (req, res) => {
 Fettes **ACHTUNG !!!** and dieser Stelle !
 Sollte es zu Fehlern kommen wie "name undefined" oder sollte er überhaut Teile des Codes nicht finden, dann kann es daran liegen wann und wo in der index.js Middleware etc geladen wird. Da sollte man auf die Reihenfolge achten!
 
+## Ein Objekt ändern
 
+```javascript
+//Update Member
+router.put('/:id', (req, res) => {
+    const found = members.some(member => member.id === parseInt(req.params.id));
 
+    if(found) {
+        const updMember = req.body;
+        members.forEach(member => {
+            if(member.id === parseInt(req.params.id)) {
+                member.name = updMember.name ? updMember.name : member.name;
+                member.email = updMember.email ? updMember.email : member.email;
+                
+                res.json({msg:'Member updated', member});
+            }
+        });
+    } else {
+        res.status(400).json ({msg: `No member with the id of ${req.params.id}`});    
+    }
+});
+```
+Nun macht man in Postman ein Put request wie beim Member anglegen, gibt dabei aber die Id an, die geupdatet werden soll.
 
+## Ein Object löschen
 
+```javascript
+//Delete Member
+router.delete('/:id', (req, res) => {
+    const found = members.some(member => member.id === parseInt(req.params.id));
 
-
+    if(found) {
+        res.json({
+            msg:'Member deleted', 
+            members: members.filter(member => member.id !== parseInt(req.params.id))
+            });
+    } else {
+        res.status(400).json ({msg: `No member with the id of ${req.params.id}`});    
+    }
+});
+```
+Hier langt dann ein einfacher delete request mit Angabe der id: localhost:5000/api/members/1 , um den member zu löschen.
+Hier wird filter benutzt um die ID zu suchen. Wie bei Suchen einzelner Einträge.
 
 
 
