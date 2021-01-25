@@ -371,7 +371,8 @@ Zunächst eine einfach Arrowfuction die das zurückgibt was wir senden.
 * wie nehmen hier name und email:
 ```
 {
-c
+    "name": "Harald Kannnix",
+    "email": "harald@gmail.com",
 }
 ```
 Und schickt man das ab, passiert ... nix !!!
