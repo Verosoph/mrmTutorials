@@ -1,0 +1,42 @@
+# Api Tutorials
+
+## Links
+
+- Build restful API with PostgreSQL and Express
+    - https://www.youtube.com/watch?v=_Mun4eOOf2Q&ab_channel=TheStoicProgrammers
+- Build REST API with Node, Express, Sequelize
+    - https://www.youtube.com/watch?v=0Yu-4_Vj4sU&ab_channel=AFKDeveloper
+- Resful Api Using Express Postgres Squelize Postman - Introduction
+    - https://www.youtube.com/watch?v=3IfvyPlGv4w&list=PLKiYR8d0HjugJ0GSTRRhyedDUFVli0JXf&ab_channel=kNiteDeveloper
+- Build a REST API with Node JS and Express | CRUD API Tutorial
+    - https://www.youtube.com/watch?v=l8WPWK9mS5M&ab_channel=JavaScriptMastery
+- Node.js, Express & MySQL Tutorial - Build a Simple FullStack App
+    - https://www.youtube.com/watch?v=vrj9AohVhPA&ab_channel=NsquaredCoding
+- Express JS - What the Heck is Middleware
+    - https://www.youtube.com/watch?v=MIr1oxQ3pao&ab_channel=SteveGriffith
+- Quickstart with Express Web Server Framework
+    - https://www.youtube.com/watch?v=cMbJ8hatqJ8&list=PLyuRouwmQCjne87u8XUdOM5oCl7vI2vVL&ab_channel=SteveGriffith
+- Express JS - Router and Routes
+    - https://www.youtube.com/watch?v=iM_S4RczozU&ab_channel=SteveGriffith
+- Learn Express.js In 48 Minutes: Web Server Tutorial
+    - https://www.youtube.com/watch?v=z7ikpQCWbtQ&ab_channel=LearnWebCode
+- LEARN EXPRESS JS IN 15 MINUTES!
+    - https://www.youtube.com/watch?v=JlgKybraoy4&ab_channel=ProgramWithErik
+- How To Structure & Setup Node.js + Express.js Apps | Best Way To Set Up Express.js Projects | 2020
+    - https://www.youtube.com/watch?v=6tN6Xc6OgGU&ab_channel=THESHOW
+- Express in Node js | Web Framework
+    - https://www.youtube.com/watch?v=2ojkb44XObc&ab_channel=Telusko
+- Build RESTful APIs with Node.js express and MySQL | Authentication with JWT | In one Video
+    - https://www.youtube.com/watch?v=WfCJ3sHnLBM&ab_channel=TechnicalBabaji
+- Node.js MySQL Tutorial | Building CRUD App with Node.js Express and MySQL | Edureka
+    - https://www.youtube.com/watch?v=xn9ef5pod18&ab_channel=edureka%21
+- Build restful API with MySQL and NodeJS
+    - https://www.youtube.com/watch?v=eI7Buf4pk6w&ab_channel=TheStoicProgrammers
+- Node.js Express, Sequelize & MySQL: Rest APIs example
+    - https://www.youtube.com/watch?v=BG_ybc1_fPE&ab_channel=BezKoder
+- Deploy NodeJS Express Application to Firebase as Function.
+    - https://www.youtube.com/watch?v=Qnw2bO3ljZs&ab_channel=SrinivasTamada
+- Node.js Rest Api with Express & MongoDB 3 - Using a MongoDB Database with Node.js
+    - https://www.youtube.com/watch?v=jqjT4TbkUzU&ab_channel=ProgrammingKnowledge
+- Build A Node.js API Authentication With JWT Tutorial
+    - https://www.youtube.com/watch?v=2jqok-WgelI&ab_channel=DevEd
