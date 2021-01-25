@@ -430,7 +430,7 @@ router.post('/', (req, res) => {
     res.json(members);
 })
 ```
-Fettes **ACHTUNG !!!** and dieser Stelle !
+Fettes **ACHTUNG !!!** an dieser Stelle !
 Sollte es zu Fehlern kommen wie "name undefined" oder sollte er überhaut Teile des Codes nicht finden, dann kann es daran liegen wann und wo in der index.js Middleware etc geladen wird. Da sollte man auf die Reihenfolge achten!
 
 ## Ein Objekt ändern
@@ -457,7 +457,7 @@ router.put('/:id', (req, res) => {
 ```
 Nun macht man in Postman ein Put request wie beim Member anglegen, gibt dabei aber die Id an, die geupdatet werden soll.
 
-## Ein Object löschen
+## Ein Objekt löschen
 
 ```javascript
 //Delete Member
@@ -477,15 +477,13 @@ router.delete('/:id', (req, res) => {
 Hier langt dann ein einfacher delete request mit Angabe der id: localhost:5000/api/members/1 , um den member zu löschen.
 Hier wird filter benutzt um die ID zu suchen. Wie bei Suchen einzelner Einträge.
 
+## express-handlebars
 
+Dies ist ein Paket zum rendern von Webseiten:
 
-
-
-
-
-
-
-
+- https://www.npmjs.com/package/express-handlebars
+- https://github.com/ericf/express-handlebars
+- https://www.youtube.com/watch?v=L72fhGm1tfE&ab_channel=TraversyMedia (ab min 58)
 
 
 ## Hilfreiche Links
@@ -513,3 +511,7 @@ Hier wird filter benutzt um die ID zu suchen. Wie bei Suchen einzelner Einträge
 * Express JS Crash Course
     * https://www.youtube.com/watch?v=L72fhGm1tfE&ab_channel=TraversyMedia
 
+* Node.js With Passport Authentication | Full Project
+    * https://www.youtube.com/watch?v=6FOq4cUdH8k&t=0s&ab_channel=TraversyMedia
+* Node.js Crash Course
+    *   https://www.youtube.com/watch?v=fBNz5xF-Kx4&t=0s&ab_channel=TraversyMedia
