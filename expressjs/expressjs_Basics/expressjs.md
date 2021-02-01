@@ -378,8 +378,8 @@ Zunächst eine einfach Arrowfuction die das zurückgibt was wir senden.
 Und schickt man das ab, passiert ... nix !!!
 Wir send zurück mit res.send ein req.body und dazu braucht man einen Bodyparser der als Modul in express vorhanden ist, den man aber noch nutzen muss.  
 In der index.js fügen wir nun eine neue Middleware ein.
-```Javascript
-app.use(express.json)));
+```javascript
+app.use(express.json()));
 ```
 Nun sollte man ein response sehen.  
 Was nun aber in unserer Arrowfunction passieren soll ist, dass ein neues Member-Objekt erstellt wird und dieses an das bestehende Members Array angehängt wird.  
