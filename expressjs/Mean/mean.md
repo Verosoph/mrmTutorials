@@ -1,7 +1,7 @@
 # MEAN
 ## Quelle
  - https://www.youtube.com/watch?v=uONz0lEWft0&list=RDCMUC29ju8bIPH5as8OGnQzwJyA&start_radio=1&t=38&ab_channel=TraversyMedia
- - 
+ 
 
 
 ## Environment
@@ -11,13 +11,13 @@ npm init
 package.json 1.0
 ```javascript
 {
-  "name": "bazet",
+  "name": "meanauth",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index"
+    "start": "node app"
   },
   "dependencies": {
     "express":"*",
@@ -43,6 +43,9 @@ Erlaubt die Anfrage an die Api von unterschiedlichen domains
 ### Path Module
 Erlaubt zugriff auf Dateistrucktur auf Server
 ### Passport Module
+### Bcryptjs
+- https://www.npmjs.com/package/bcryptjs
+
 ### Mongoose Module
 Regelt Datenbankconnection zu MongoDB
 - https://mongoosejs.com/docs/connections.html
@@ -81,10 +84,10 @@ npm install -D nodemon
 package.json 1.1
 ```javascript
 {
-  "name": "bazet",
+  "name": "meanauth",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app",
     "dev": "nodemon app.js"
@@ -113,12 +116,12 @@ const express = require('express');
 const router = express.Router();
 
 // Register
-router.get('/register', (req, res, next) => {
+router.post('/register', (req, res, next) => {
     res.send('REGISTER');
 });
 
 // Authendicate
-router.get('/authendicate', (req, res, next) => {
+router.post('/authendicate', (req, res, next) => {
     res.send('AUTHENDICATION');
 });
 
@@ -265,3 +268,111 @@ app.listen(port, () => {
 });
 ```
 
+## Models
+Man erstellt zunächst ein Model mit einem Schema für den User.
+/models/User.js
+```javascript
+const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');
+const config = require('../config/database');
+
+//user Schema
+const UserSchema = mongoose.Schema({
+    name: {
+        type : String
+    },
+    email: {
+        type : String,
+        required: true
+    },
+    username: {
+        type : String,
+        required: true
+    },
+    password: {
+        type : String,
+        required: true
+    }
+});
+
+const User = module.exports = mongoose.model('User', UserSchema);
+
+module.exports.getUserById = function(id, callback){
+    User.findById(id, callback);
+}
+
+module.exports.getUserByUsername = function(username, callback){
+    const query = {username : username}
+    User.findOne(query, callback);
+}
+
+module.exports.addUser = function(newUser, callback){
+    console.log('Status db connection: ' + mongoose.connection.readyState);
+    
+     bcrypt.genSalt(10, (err, salt) => {
+        bcrypt.hash(newUser.password, salt, (err, hash) => {
+            if(err) {
+                console.log('error')};
+            newUser.password = hash;
+            newUser.save(callback);
+        });
+    });
+}
+```
+Und ändert dann die route users entsprechend:
+/route/users.js
+```javascript
+const express = require('express');
+const router = express.Router();
+const passport = require('passport');
+const jwt = require('jsonwebtoken');
+
+const User = require('../models/user');
+const user = require('../models/user');
+
+// Register
+router.post('/register', (req, res, next) => {
+    let newUser = new User({
+        name: req.body.name,
+        email: req.body.email,
+        username: req.body.username,
+        password: req.body.password,
+    })
+
+    User.addUser(newUser, (err, user) => {
+        if(err){
+            res.json({ success: false, msg: 'Failed to register user'});        
+        } else {
+            res.json({success: true, msg:'user registered'});
+        }
+    });
+});
+
+
+// Authendicate
+router.post('/authendicate', (req, res, next) => {
+    res.send('AUTHENDICATION');
+});
+
+// Profile
+router.get('/profile', (req, res, next) => {
+    res.send('PROFILE');
+});
+
+module.exports = router;
+```
+Zum testen kann man dann postman verwenden:
+- POST request
+    - http://localhost:3000/users/register
+- Headers
+    - content-type - application/json
+- Body
+    - raw
+```
+{
+    "name": "jonDoe",
+    "email": "jon@email.com",
+    "username": "jon",
+    "password": "secret"
+}
+```

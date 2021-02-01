@@ -1,0 +1,24 @@
+{
+  "name": "bazet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "mongoose": "*",
+    "bcryptjs": "*",
+    "cors": "*",
+    "jsonwebtoken": "8.5.1",
+    "passport": "*",
+    "passport-jwt": "*"
+  },
+  "author": "Marco Mettke",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
