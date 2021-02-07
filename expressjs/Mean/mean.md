@@ -121,7 +121,7 @@ router.post('/register', (req, res, next) => {
 });
 
 // Authendicate
-router.post('/authendicate', (req, res, next) => {
+router.post('/authenticate', (req, res, next) => {
     res.send('AUTHENDICATION');
 });
 
@@ -180,7 +180,7 @@ app.listen(port, () => {
 routes sollten nun erreichbar sein über:
 - localhost:3000/users/register
 - localhost:3000/users/profile
-- localhost:3000/users/authendicate
+- localhost:3000/users/authenticate
 - localhost:3000/users/validation
 
 ## Statisches Verzsichnis anlegen
@@ -350,7 +350,7 @@ router.post('/register', (req, res, next) => {
 
 
 // Authendicate
-router.post('/authendicate', (req, res, next) => {
+router.post('/authenticate', (req, res, next) => {
     res.send('AUTHENDICATION');
 });
 
@@ -376,3 +376,228 @@ Zum testen kann man dann postman verwenden:
     "password": "secret"
 }
 ```
+
+## Tokensystem integrieren für authendication
+
+Die Middleware "passport" ist oben in app.js schon integriert. Diese wird für Authetifizierung benötigt.
+```javascript
+const passport = require('passport');
+```
+Und nun muss man diese noch in der app.js nutzbar machen.
+
+```javascript
+// Passport Middleware
+app.use(passport.initialize());
+app.use(passport.session());
+```
+Es gitb verschiedene Strategien um umgang mit JWT um das folgende umzusetzen, die sei ein Beispiel:
+
+* neues File erstellen: config/passport.js
+
+```javascript
+const JwtStrategy = require('passport-jwt').Strategy;
+const ExtractJwt = require('passport-jwt').ExtractJwt;
+const User = require('../models/user');
+const config = require('../config/database');
+
+module.exports = function(passport) {
+    let opts = {};
+    opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
+    opts.secretOrKey = config.secret;
+    passport.use(new JwtStrategy(opts, (jwt_payload, done) => {
+        User.getUserById(jwt_payload._id, (err, user) => {
+            if(err){
+                return done(err, false);
+            }
+
+            if(user){
+                return done(null, user);
+            } else {
+                return done(null, false);
+            }
+        })
+    }))
+}
+```
+
+Dieser Codeteil ist ein Bespiel von : 
+- https://www.npmjs.com/package/passport-jwt
+
+wie passport eingesetzt werden kann.
+
+Nun zur Authendication in routes/users.js
+- Erster Schritt hier ist den Username und das Passwort      welche übermittelt werden abzugreifen.
+- dann holen wir den username aus der MongoDB
+- und vergleichen das Passwort
+- ausserdem muss die config eingebunden werden
+
+```javascript
+const config = require('../config/database');
+```
+
+
+Dazu ändern wir den Teil // Authendicate
+```javascript
+// Authendicate
+router.post('/authenticate', (req, res, next) => {
+    res.send('AUTHENDICATION');
+});
+```
+zu: 
+
+
+```javascript
+// Authendicate
+router.post('/authenticate', (req, res, next) => {
+    const username = req.body.username;
+    const password = req.body.password;
+
+    User.getUserByUsername(username, (err, user) => {
+        if(err) throw err;
+        if(!user){
+            return res.json({ success: false, msg: 'User not found'})
+        }
+
+        User.comparePassword(password, user.password, (err, isMatch) => {
+            if(err) throw err;
+            if(isMatch){
+                const token = jwt.sign(user, config.secret, {
+                    expiresIn: 604800 // is 1 week in seconds
+                });
+
+                res.json({
+                    success: true,
+                    token: 'JWT '+token,
+                    user: {
+                        id: user._id,
+                        name: user.name,
+                        username: user.username,
+                        email: user.email
+                    }
+                });
+            } else {
+                return res.json({ success: false, msg: 'Wrong password'})
+            }
+        });
+    });
+});
+```
+Wir haben hier eine Funktion comparePassword() verwendet, diese muss in models/user.js noch erstellt werden:
+
+```javascript
+// comparePassword(submitted Password, hashedPassword from db, callback)
+module.exports.comparePassword = function(candidatePassword, hash, callback) {
+    bcrypt.compare(candidatePassword, hash, (err, isMatch) => {
+        if (err) throw err;
+        callback(null, isMatch);
+    });
+}
+```
+Zum testen kann man dann postman verwenden:
+- POST request
+    - http://localhost:3000/users/authenticate
+- Headers
+    - content-type - application/json
+- Body
+    - raw
+```
+{
+    "username": "jon",
+    "password": "secret"
+}
+```
+
+## Nutze Token für db request
+
+Um eine der bisherigen routes 
+
+```javascript
+// Profile
+router.get('/profile', (req, res, next) => {
+    res.send('PROFILE');
+});
+```
+```javascript
+ passport.authenticate('jwt', { session: false })
+```
+zu schützen reicht dann ein zweiter parameter.
+
+Die ganze route schaut dann so aus und gibt den user zurück:
+
+```javascript
+router.get('/profile', passport.authenticate('jwt', { session: false }), (req, res, next) => {
+    res.json({
+      user: {
+        _id: req.user._id,
+        name: req.user.name,
+        username: req.user.username,
+        email: req.user.email,
+      }
+    });
+  });
+```
+Zum testen kann man dann postman verwenden:
+- get request
+    - http://localhost:3000/users/profile
+- Headers
+    - Authorization - der vergeben jwt token
+---
+
+hier muss man schaune wiue der payload in der config/passpoer ausschaut, weil das auf die versionen ankommt und je nachdem muss man die zeile 
+```
+User.getUserById(jwt_payload._id, (err, user) => {
+```
+anpassen.
+
+mit 
+```javascript
+console.log(jwt_payload);
+```
+über der zeile bekomme ic über den die console den payload angezeigt hier z.b: 
+```
+{
+  data: {
+    _id: '601c546642f98d546c17f93d',
+    name: 'reiner',
+    email: 'jon@email.com',
+    username: 'rainer',
+    password: '$2a$10$dFWSuy.Zoxt7VFsSbsP3.euN3ZeVdjWhG/IY9Php7sICTbSP.hU16',
+    __v: 0
+  },
+  iat: 1612470331,
+  exp: 1613075131
+}
+```
+hier sieht man das "data:" Objekt und dies muss man dann mir angeben also:
+```javascript
+User.getUserById(jwt_payload.data._id, (err, user) => {
+```
+nun sollte es funktionieren !!!
+
+
+## Troubleshooting
+
+### Error: express request body undefined
+
+Mit express.js 6.14.10 verwendet man den integrierten body parser:
+
+```javascript
+//Body Parser
+app.use(express.json());
+``` 
+
+Das langt aber nicht um post request per json verarbeiten zu können braucht es noch:
+
+```javascript
+//Body Parser
+app.use(express.json());
+app.use(express.urlencoded());
+``` 
+
+oder nimm einfach body-parser
+
+```javascript
+const bodyParser = require('body-parser');
+//Body Parser
+app.use(bodyParser.json())
+``` 
