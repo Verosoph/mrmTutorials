@@ -1,0 +1,2382 @@
+[
+    {
+        "id": "1000",
+        "product": "Kaisersemmel vom Vortag",
+        "unit": "",
+        "price": "0,10",
+        "detail": ""
+    },
+    {
+        "id": "1001",
+        "product": "Kaisersemmel",
+        "unit": "Stück",
+        "price": "0,40",
+        "detail": "aus Weizenmehl"
+    },
+    {
+        "id": "1002",
+        "product": "Mohnsemmeln",
+        "unit": "Stück",
+        "price": "0,55",
+        "detail": "aus Weizenmehl"
+    },
+    {
+        "id": "1003",
+        "product": "Sesamsemmeln",
+        "unit": "Stück",
+        "price": "0,55",
+        "detail": "aus Weizenmehl"
+    },
+    {
+        "id": "1004",
+        "product": "Schrippen",
+        "unit": "Stück",
+        "price": "0,50",
+        "detail": "aus Weizenmehl"
+    },
+    {
+        "id": "1005",
+        "product": "Laugensemmeln",
+        "unit": "Stück",
+        "price": "0,60",
+        "detail": "aus Weizenmehl"
+    },
+    {
+        "id": "1006",
+        "product": "Klosterer",
+        "unit": "Stück",
+        "price": "0,65",
+        "detail": "aus Weizenmehl"
+    },
+    {
+        "id": "1007",
+        "product": "Roggensemmel",
+        "unit": "Stück",
+        "price": "0,70",
+        "detail": "aus Roggenmehl"
+    },
+    {
+        "id": "1008",
+        "product": "Käsesemmel",
+        "unit": "Stück",
+        "price": "1,00",
+        "detail": "aus Weizenmehl, mit Gouda"
+    },
+    {
+        "id": "1009",
+        "product": "Kornspitz",
+        "unit": "Stück",
+        "price": "0,65",
+        "detail": "Dinkelmehrkorn"
+    },
+    {
+        "id": "1010",
+        "product": "Laugenbrezen",
+        "unit": "Stück",
+        "price": "0,70",
+        "detail": "aus Weizenmehl"
+    },
+    {
+        "id": "1011",
+        "product": "Weltmeistersemmeln",
+        "unit": "Stück",
+        "price": "0,80",
+        "detail": "Mehrkorn"
+    },
+    {
+        "id": "1012",
+        "product": "Kürbiskernsemmeln",
+        "unit": "Stück",
+        "price": "0,80",
+        "detail": "Mehrkorn"
+    },
+    {
+        "id": "1013",
+        "product": "Hafersemmeln",
+        "unit": "Stück",
+        "price": "0,80",
+        "detail": "Dinkelmehrkorn"
+    },
+    {
+        "id": "1014",
+        "product": "Zwillingsweck",
+        "unit": "Stück",
+        "price": "0,80",
+        "detail": "Dinkelmehrkorn"
+    },
+    {
+        "id": "1015",
+        "product": "Dinkelspitz",
+        "unit": "Stück",
+        "price": "0,80",
+        "detail": "Dinkelmehrkorn"
+    },
+    {
+        "id": "1016",
+        "product": "Bauernsemmel",
+        "unit": "Stück",
+        "price": "1,20",
+        "detail": "Roggen u. Weizen"
+    },
+    {
+        "id": "1020",
+        "product": "Salzstangen",
+        "unit": "Stück",
+        "price": "0,60",
+        "detail": "aus Weizenmehl"
+    },
+    {
+        "id": "1021",
+        "product": "Mohnstangen",
+        "unit": "Stück",
+        "price": "0,60",
+        "detail": "aus Weizenmehl"
+    },
+    {
+        "id": "1022",
+        "product": "Käsestangen",
+        "unit": "Stück",
+        "price": "1,40",
+        "detail": "aus Weizenmehl, mit Gouda"
+    },
+    {
+        "id": "1023",
+        "product": "Schinkenstangen",
+        "unit": "Stück",
+        "price": "1,50",
+        "detail": "aus Weizenmehl, mit Gouda"
+    },
+    {
+        "id": "1024",
+        "product": "Laugenstangen",
+        "unit": "Stück",
+        "price": "1,00",
+        "detail": "aus Weizenmehl"
+    },
+    {
+        "id": "1025",
+        "product": "Laugenmohnstange",
+        "unit": "Stück",
+        "price": "1,10",
+        "detail": "aus Weizenmehl"
+    },
+    {
+        "id": "1026",
+        "product": "Laugensesamstange",
+        "unit": "Stück",
+        "price": "1,10",
+        "detail": "aus Weizenmehl"
+    },
+    {
+        "id": "1027",
+        "product": "Käselaugenstangen",
+        "unit": "Stück",
+        "price": "1,70",
+        "detail": "aus Weizenmehl"
+    },
+    {
+        "id": "1028",
+        "product": "Knusperstangen",
+        "unit": "Stück",
+        "price": "1,70",
+        "detail": "aus Weizenmehl"
+    },
+    {
+        "id": "1029",
+        "product": "Pizzazungen",
+        "unit": "Stück",
+        "price": "2,50",
+        "detail": "aus Weizenmehl, mit Gouda"
+    },
+    {
+        "id": "1950",
+        "product": "Partylaugenstängle",
+        "unit": "Stück",
+        "price": "0,70",
+        "detail": "aus Weizenmehl"
+    },
+    {
+        "id": "1951",
+        "product": "Partylaugensemmel",
+        "unit": "Stück",
+        "price": "0,50",
+        "detail": "aus Weizenmehl"
+    },
+    {
+        "id": "1952",
+        "product": "Partykäsestängle",
+        "unit": "Stück",
+        "price": "1,00",
+        "detail": "aus Weizenmehl, mit Gouda"
+    },
+    {
+        "id": "1953",
+        "product": "Partykaiser",
+        "unit": "Stück",
+        "price": "0,30",
+        "detail": "aus Weizenmehl"
+    },
+    {
+        "id": "1954",
+        "product": "Partymohnsemmele",
+        "unit": "Stück",
+        "price": "0,40",
+        "detail": "aus Weizenmehl"
+    },
+    {
+        "id": "2001",
+        "product": "Weißenbr. Landbrot",
+        "unit": "500 g",
+        "price": "1,90",
+        "detail": "75 R / 25 W mit Natursauerteig"
+    },
+    {
+        "id": "2002",
+        "product": "Weißenbr. Landbrot",
+        "unit": "1 kg",
+        "price": "3,80",
+        "detail": "75 R / 25 W mit Natursauerteig"
+    },
+    {
+        "id": "2003",
+        "product": "Roggenbrot",
+        "unit": "1 kg",
+        "price": "3,80",
+        "detail": "95 R / 5 W mit Natursauerteig"
+    },
+    {
+        "id": "2004",
+        "product": "Roggenbrot",
+        "unit": "1,5 kg",
+        "price": "5,70",
+        "detail": "95 R / 5 W mit Natursauerteig"
+    },
+    {
+        "id": "2005",
+        "product": "Gassenhauer",
+        "unit": "1 kg",
+        "price": "3,35",
+        "detail": "70 R / 30 W mit mildem Sauerteig"
+    },
+    {
+        "id": "2006",
+        "product": "Krustenbrot",
+        "unit": "750 g",
+        "price": "2,95",
+        "detail": "75 R / 25 W mit Natursauerteig"
+    },
+    {
+        "id": "2007",
+        "product": "AOK - Brot",
+        "unit": "1 kg",
+        "price": "4,80",
+        "detail": "Vollkornbrot mit Natursauerteig"
+    },
+    {
+        "id": "2008",
+        "product": "Frühlingsbrot",
+        "unit": "750 g",
+        "price": "4,20",
+        "detail": "Mehrkornmischbrot"
+    },
+    {
+        "id": "2009",
+        "product": "Zwiebelbrot",
+        "unit": "750 g",
+        "price": "4,00",
+        "detail": ""
+    },
+    {
+        "id": "2010",
+        "product": "Schinkenbrot",
+        "unit": "750 g",
+        "price": "4,50",
+        "detail": ""
+    },
+    {
+        "id": "2014",
+        "product": "Sonnenblumenkernbrot",
+        "unit": "750 g",
+        "price": "4,20",
+        "detail": ""
+    },
+    {
+        "id": "2015",
+        "product": "Weißbrot",
+        "unit": "500 g",
+        "price": "2,65",
+        "detail": ""
+    },
+    {
+        "id": "2016",
+        "product": "Stangenweißbrot",
+        "unit": "Stück",
+        "price": "2,65",
+        "detail": ""
+    },
+    {
+        "id": "2017",
+        "product": "Kastenweißbrot",
+        "unit": "Stück",
+        "price": "2,65",
+        "detail": ""
+    },
+    {
+        "id": "2018",
+        "product": "kleine Stangen",
+        "unit": "Stück",
+        "price": "1,75",
+        "detail": ""
+    },
+    {
+        "id": "2019",
+        "product": "Baguettesemmeln",
+        "unit": "Stück",
+        "price": "0,90",
+        "detail": ""
+    },
+    {
+        "id": "2020",
+        "product": "Dinkelmehrkornbaguette",
+        "unit": "Stück",
+        "price": "3,20",
+        "detail": ""
+    },
+    {
+        "id": "2021",
+        "product": "Brot nach Gewicht",
+        "unit": "",
+        "price": "",
+        "detail": ""
+    },
+    {
+        "id": "2022",
+        "product": "Weizensemmelrad",
+        "unit": "",
+        "price": "15,00",
+        "detail": ""
+    },
+    {
+        "id": "2023",
+        "product": "Roggensemmelrad",
+        "unit": "",
+        "price": "22,00",
+        "detail": ""
+    },
+    {
+        "id": "2101",
+        "product": "Landbrot",
+        "unit": "250 g",
+        "price": "1,05",
+        "detail": ""
+    },
+    {
+        "id": "2102",
+        "product": "Landbrot",
+        "unit": "500 g",
+        "price": "1,90",
+        "detail": ""
+    },
+    {
+        "id": "2103",
+        "product": "Roggenbrot",
+        "unit": "500 g",
+        "price": "1,90",
+        "detail": ""
+    },
+    {
+        "id": "2104",
+        "product": "Roggenbrot",
+        "unit": "750 g",
+        "price": "2,85",
+        "detail": ""
+    },
+    {
+        "id": "2105",
+        "product": "Gassenhauer",
+        "unit": "500 g",
+        "price": "1,70",
+        "detail": ""
+    },
+    {
+        "id": "2106",
+        "product": "Krustenbrot",
+        "unit": "375 g",
+        "price": "1,50",
+        "detail": ""
+    },
+    {
+        "id": "2107",
+        "product": "AOK - Brot",
+        "unit": "500 g",
+        "price": "2,40",
+        "detail": ""
+    },
+    {
+        "id": "2108",
+        "product": "Frühlingsbrot",
+        "unit": "375 g",
+        "price": "2,10",
+        "detail": ""
+    },
+    {
+        "id": "2109",
+        "product": "Zwiebelbrot",
+        "unit": "375 g",
+        "price": "2,00",
+        "detail": ""
+    },
+    {
+        "id": "2110",
+        "product": "Schinkenbrot",
+        "unit": "375 g",
+        "price": "2,25",
+        "detail": ""
+    },
+    {
+        "id": "2114",
+        "product": "Sonnenblumenkernbrot",
+        "unit": "375 g",
+        "price": "2,10",
+        "detail": ""
+    },
+    {
+        "id": "2115",
+        "product": "Weißbrot",
+        "unit": "250 g",
+        "price": "1,35",
+        "detail": ""
+    },
+    {
+        "id": "2116",
+        "product": "Stangenweißbrot",
+        "unit": "halb",
+        "price": "1,35",
+        "detail": ""
+    },
+    {
+        "id": "2117",
+        "product": "Kastenweißbrot",
+        "unit": "halb",
+        "price": "1,35",
+        "detail": ""
+    },
+    {
+        "id": "2118",
+        "product": "kleine Stangen",
+        "unit": "halb",
+        "price": "0,90",
+        "detail": ""
+    },
+    {
+        "id": "2120",
+        "product": "Dinkelmehrkornbaguette",
+        "unit": "halb",
+        "price": "1,60",
+        "detail": ""
+    },
+    {
+        "id": "2121",
+        "product": "Omas Bauernlaib",
+        "unit": "3 kg",
+        "price": "12,60",
+        "detail": ""
+    },
+    {
+        "id": "2122",
+        "product": "Omas Bauernlaib",
+        "unit": "1,5 kg",
+        "price": "6,30",
+        "detail": ""
+    },
+    {
+        "id": "2123",
+        "product": "Omas Bauernlaib",
+        "unit": "750 g",
+        "price": "3,15",
+        "detail": ""
+    },
+    {
+        "id": "2124",
+        "product": "Omas Bauernlaib lang",
+        "unit": "1 kg",
+        "price": "4,20",
+        "detail": ""
+    },
+    {
+        "id": "2125",
+        "product": "Dinkelvollkornbrot",
+        "unit": "1 kg",
+        "price": "5,20",
+        "detail": ""
+    },
+    {
+        "id": "2126",
+        "product": "Dinklevollkornbrot",
+        "unit": "500 g",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "3001",
+        "product": "Apfeltasche",
+        "unit": "Stück",
+        "price": "1,80",
+        "detail": ""
+    },
+    {
+        "id": "3002",
+        "product": "Quarktasche",
+        "unit": "Stück",
+        "price": "1,80",
+        "detail": ""
+    },
+    {
+        "id": "3003",
+        "product": "Kirschvanilleplunder",
+        "unit": "Stück",
+        "price": "1,80",
+        "detail": ""
+    },
+    {
+        "id": "3005",
+        "product": "Schokocroissant",
+        "unit": "Stück",
+        "price": "1,70",
+        "detail": "mit Fettglasur"
+    },
+    {
+        "id": "3006",
+        "product": "Butterhörnchen",
+        "unit": "Stück",
+        "price": "1,30",
+        "detail": ""
+    },
+    {
+        "id": "3007",
+        "product": "Mohnschnecke",
+        "unit": "Stück",
+        "price": "1,70",
+        "detail": ""
+    },
+    {
+        "id": "3008",
+        "product": "Nußschnecke",
+        "unit": "Stück",
+        "price": "1,70",
+        "detail": ""
+    },
+    {
+        "id": "3010",
+        "product": "Erdbeerschokocremeplunder",
+        "unit": "Stück",
+        "price": "2,40",
+        "detail": ""
+    },
+    {
+        "id": "3011",
+        "product": "Aprikosenplunder",
+        "unit": "Stück",
+        "price": "1,70",
+        "detail": ""
+    },
+    {
+        "id": "3012",
+        "product": "Johannisbeerschnecke",
+        "unit": "Stück",
+        "price": "1,80",
+        "detail": ""
+    },
+    {
+        "id": "3013",
+        "product": "Fruchtplunder",
+        "unit": "Stück",
+        "price": "2,40",
+        "detail": ""
+    },
+    {
+        "id": "3016",
+        "product": "Nussbreze",
+        "unit": "Stück",
+        "price": "1,80",
+        "detail": ""
+    },
+    {
+        "id": "3020",
+        "product": "Muffin",
+        "unit": "Stück",
+        "price": "1,40",
+        "detail": "mit Fettglasur"
+    },
+    {
+        "id": "3021",
+        "product": "Amerikaner",
+        "unit": "Stück",
+        "price": "1,40",
+        "detail": "mit Fettglasur"
+    },
+    {
+        "id": "3022",
+        "product": "Donut",
+        "unit": "Stück",
+        "price": "1,40",
+        "detail": "mit Fettglasur"
+    },
+    {
+        "id": "3030",
+        "product": "Küchle groß",
+        "unit": "Stück",
+        "price": "1,65",
+        "detail": "mit Alk. Verbacken"
+    },
+    {
+        "id": "3031",
+        "product": "Küchle mittel",
+        "unit": "Stück",
+        "price": "1,20",
+        "detail": "mit Alk. Verbacken"
+    },
+    {
+        "id": "3032",
+        "product": "Miniküchle",
+        "unit": "Stück",
+        "price": "0,90",
+        "detail": "mit Alk. Verbacken"
+    },
+    {
+        "id": "3033",
+        "product": "Krapfen",
+        "unit": "Stück",
+        "price": "1,50",
+        "detail": ""
+    },
+    {
+        "id": "3034",
+        "product": "Kameruner",
+        "unit": "Stück",
+        "price": "1,50",
+        "detail": ""
+    },
+    {
+        "id": "4000",
+        "product": "Streuselkuchen",
+        "unit": "Stück",
+        "price": "3,00",
+        "detail": ""
+    },
+    {
+        "id": "4001",
+        "product": "Hefenudel",
+        "unit": "ganz",
+        "price": "2,90",
+        "detail": ""
+    },
+    {
+        "id": "4002",
+        "product": "Hefezopf",
+        "unit": "ganz",
+        "price": "4,50",
+        "detail": ""
+    },
+    {
+        "id": "4003",
+        "product": "Nußzopf",
+        "unit": "ganz",
+        "price": "6,60",
+        "detail": ""
+    },
+    {
+        "id": "4004",
+        "product": "Quarkzopf",
+        "unit": "ganz",
+        "price": "6,50",
+        "detail": ""
+    },
+    {
+        "id": "4005",
+        "product": "Mohnzopf groß",
+        "unit": "ganz",
+        "price": "14,30",
+        "detail": ""
+    },
+    {
+        "id": "4006",
+        "product": "Nusszopf groß",
+        "unit": "ganz",
+        "price": "17,65",
+        "detail": ""
+    },
+    {
+        "id": "4008",
+        "product": "Hefezopf groß",
+        "unit": "ganz",
+        "price": "9,60",
+        "detail": ""
+    },
+    {
+        "id": "4010",
+        "product": "Quarkbällchen",
+        "unit": "Stück",
+        "price": "0,60",
+        "detail": ""
+    },
+    {
+        "id": "4013",
+        "product": "Quarkbällchen",
+        "unit": "3er Pack",
+        "price": "1,65",
+        "detail": ""
+    },
+    {
+        "id": "4016",
+        "product": "Quarkbällchen",
+        "unit": "6er Pack",
+        "price": "3,30",
+        "detail": ""
+    },
+    {
+        "id": "4019",
+        "product": "Quarkbällchen",
+        "unit": "9er Pack",
+        "price": "4,95",
+        "detail": ""
+    },
+    {
+        "id": "4020",
+        "product": "Feuerspatzen",
+        "unit": "Stück",
+        "price": "1,20",
+        "detail": ""
+    },
+    {
+        "id": "4022",
+        "product": "Feuerspatzen",
+        "unit": "2er Pack",
+        "price": "2,20",
+        "detail": ""
+    },
+    {
+        "id": "4100",
+        "product": "Streuselkuchen",
+        "unit": "Stück halb",
+        "price": "1,50",
+        "detail": ""
+    },
+    {
+        "id": "4101",
+        "product": "Hefenudel",
+        "unit": "halb",
+        "price": "1,45",
+        "detail": ""
+    },
+    {
+        "id": "4102",
+        "product": "Hefezopf",
+        "unit": "halb",
+        "price": "2,25",
+        "detail": ""
+    },
+    {
+        "id": "4103",
+        "product": "Nußzopf",
+        "unit": "halb",
+        "price": "3,30",
+        "detail": ""
+    },
+    {
+        "id": "4104",
+        "product": "Quarkzopf",
+        "unit": "halb",
+        "price": "3,15",
+        "detail": ""
+    },
+    {
+        "id": "4105",
+        "product": "Mohnzopf groß",
+        "unit": "halb",
+        "price": "7,15",
+        "detail": ""
+    },
+    {
+        "id": "4106",
+        "product": "Nusszopf groß",
+        "unit": "halb",
+        "price": "8,85",
+        "detail": ""
+    },
+    {
+        "id": "4501",
+        "product": "Marmorkuchen",
+        "unit": "Stück",
+        "price": "1,40",
+        "detail": "mit Fettglasur"
+    },
+    {
+        "id": "4502",
+        "product": "Zitronenkuchen",
+        "unit": "Stück",
+        "price": "1,40",
+        "detail": "mit Fettglasur"
+    },
+    {
+        "id": "4503",
+        "product": "Nußkuchen",
+        "unit": "Stück",
+        "price": "1,60",
+        "detail": "mit Fettglasur"
+    },
+    {
+        "id": "4504",
+        "product": "Rotweinkuchen",
+        "unit": "Stück",
+        "price": "1,60",
+        "detail": "mit Alkohol"
+    },
+    {
+        "id": "4505",
+        "product": "Eierlikörkuchen",
+        "unit": "Stück",
+        "price": "1,60",
+        "detail": "mit Alkohol"
+    },
+    {
+        "id": "5001",
+        "product": "Mohnstriezel",
+        "unit": "Stück",
+        "price": "1,50",
+        "detail": ""
+    },
+    {
+        "id": "5002",
+        "product": "Butterkuchen",
+        "unit": "Stück",
+        "price": "2,10",
+        "detail": ""
+    },
+    {
+        "id": "5003",
+        "product": "Käsekuchen hoch, rund",
+        "unit": "Stück",
+        "price": "2,40",
+        "detail": ""
+    },
+    {
+        "id": "5004",
+        "product": "Käsemandarinenkuchen, Blech",
+        "unit": "Stück",
+        "price": "2,20",
+        "detail": ""
+    },
+    {
+        "id": "5005",
+        "product": "Käsekuchen mit Johannisbeeren",
+        "unit": "Stück",
+        "price": "2,20",
+        "detail": ""
+    },
+    {
+        "id": "5006",
+        "product": "Käsekuchen mit Butterguss",
+        "unit": "Stück",
+        "price": "2,20",
+        "detail": ""
+    },
+    {
+        "id": "5007",
+        "product": "Russischer Zupfkuchen",
+        "unit": "Stück",
+        "price": "2,20",
+        "detail": ""
+    },
+    {
+        "id": "5008",
+        "product": "Walnusskarottenkuchen",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "5009",
+        "product": "Himbeerkuchen",
+        "unit": "Stück",
+        "price": "2,20",
+        "detail": ""
+    },
+    {
+        "id": "5010",
+        "product": "Erdbeerkuchen",
+        "unit": "Stück",
+        "price": "2,40",
+        "detail": ""
+    },
+    {
+        "id": "5011",
+        "product": "gemischter Obstkuchen",
+        "unit": "Stück",
+        "price": "2,20",
+        "detail": ""
+    },
+    {
+        "id": "5012",
+        "product": "Schokokirschkuchen",
+        "unit": "Stück",
+        "price": "2,20",
+        "detail": "mit Alkohol, mit Fettglasur"
+    },
+    {
+        "id": "5013",
+        "product": "Donauwelle",
+        "unit": "Stück",
+        "price": "2,40",
+        "detail": "mit Alkohol, mit Fettglasur"
+    },
+    {
+        "id": "5014",
+        "product": "Frankfurther Kranz",
+        "unit": "Stück",
+        "price": "2,40",
+        "detail": "mit Alkohol"
+    },
+    {
+        "id": "6044",
+        "product": "Schokobutterkremkranz mit Kirschen",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": "mit Alkohol"
+    },
+    {
+        "id": "5015",
+        "product": "Kirschjoghurtkuchen",
+        "unit": "Stück",
+        "price": "2,20",
+        "detail": ""
+    },
+    {
+        "id": "5016",
+        "product": "Rhabarberkuchen",
+        "unit": "Stück",
+        "price": "2,20",
+        "detail": ""
+    },
+    {
+        "id": "5017",
+        "product": "Kokosaprikosenkuchen",
+        "unit": "Stück",
+        "price": "2,30",
+        "detail": ""
+    },
+    {
+        "id": "5018",
+        "product": "Hawaikuchen",
+        "unit": "Stück",
+        "price": "2,10",
+        "detail": ""
+    },
+    {
+        "id": "5019",
+        "product": "Aprikosennußkuchen",
+        "unit": "Stück",
+        "price": "2,30",
+        "detail": ""
+    },
+    {
+        "id": "5020",
+        "product": "Apfelkuchen gedeckt",
+        "unit": "Stück",
+        "price": "2,30",
+        "detail": ""
+    },
+    {
+        "id": "5021",
+        "product": "Apfelkuchen mit Makronengitter",
+        "unit": "Stück",
+        "price": "2,50",
+        "detail": ""
+    },
+    {
+        "id": "5022",
+        "product": "Apfelkuchen auf Hefeteig",
+        "unit": "Stück",
+        "price": "2,30",
+        "detail": ""
+    },
+    {
+        "id": "5023",
+        "product": "Kirschkuchen auf Hefeteig",
+        "unit": "Stück",
+        "price": "2,30",
+        "detail": ""
+    },
+    {
+        "id": "5024",
+        "product": "Zwetschgenkuchen auf Hefeteig",
+        "unit": "Stück",
+        "price": "2,30",
+        "detail": ""
+    },
+    {
+        "id": "5028",
+        "product": "Aprikosenkuchen auf Hefeteig",
+        "unit": "Stück",
+        "price": "2,30",
+        "detail": ""
+    },
+    {
+        "id": "5025",
+        "product": "Apfelweinkuchen",
+        "unit": "Stück",
+        "price": "2,50",
+        "detail": "mit alk. Verbacken"
+    },
+    {
+        "id": "5026",
+        "product": "Apfelschlupfkuchen",
+        "unit": "Stück",
+        "price": "1,90",
+        "detail": ""
+    },
+    {
+        "id": "5027",
+        "product": "Kirschschlupfkuchen",
+        "unit": "Stück",
+        "price": "1,90",
+        "detail": ""
+    },
+    {
+        "id": "5030",
+        "product": "Beerenkuchen",
+        "unit": "Stück",
+        "price": "2,20",
+        "detail": ""
+    },
+    {
+        "id": "5031",
+        "product": "Aprikosen-Käse-Mohnkuchen",
+        "unit": "Stück",
+        "price": "2,40",
+        "detail": ""
+    },
+    {
+        "id": "5032",
+        "product": "Amarettokirschkuchen",
+        "unit": "Stück",
+        "price": "2,50",
+        "detail": "mit Alk. Verbacken"
+    },
+    {
+        "id": "5033",
+        "product": "Rhabarber käse kuchen",
+        "unit": "Stück",
+        "price": "2,20",
+        "detail": ""
+    },
+    {
+        "id": "5034",
+        "product": "Heidelbeerkuchen",
+        "unit": "Stück",
+        "price": "2,20",
+        "detail": ""
+    },
+    {
+        "id": "5035",
+        "product": "Mohnschnitten auf Hefeteig",
+        "unit": "Stück",
+        "price": "2,30",
+        "detail": ""
+    },
+    {
+        "id": "5036",
+        "product": "Feuerwehrkuchen",
+        "unit": "Stück",
+        "price": "2,50",
+        "detail": ""
+    },
+    {
+        "id": "6001",
+        "product": "Zitronenrolle",
+        "unit": "Stück",
+        "price": "2,10",
+        "detail": "ggf. mit Fettglasur"
+    },
+    {
+        "id": "6002",
+        "product": "Himbeerrolle",
+        "unit": "Stück",
+        "price": "2,10",
+        "detail": "ggf. mit Fettglasur"
+    },
+    {
+        "id": "6003",
+        "product": "Erdbeerrolle",
+        "unit": "Stück",
+        "price": "2,10",
+        "detail": "ggf. mit Fettglasur"
+    },
+    {
+        "id": "6004",
+        "product": "Cappuccinosahnerolle",
+        "unit": "Stück",
+        "price": "2,10",
+        "detail": "ggf. mit Fettglasur"
+    },
+    {
+        "id": "6005",
+        "product": "Mandarinensahnerolle",
+        "unit": "Stück",
+        "price": "2,10",
+        "detail": "ggf. mit Fettglasur"
+    },
+    {
+        "id": "6006",
+        "product": "Bienenstich",
+        "unit": "Stück",
+        "price": "2,30",
+        "detail": ""
+    },
+    {
+        "id": "6007",
+        "product": "Schlotfeger",
+        "unit": "Stück",
+        "price": "1,30",
+        "detail": ""
+    },
+    {
+        "id": "6008",
+        "product": "Windbeutel",
+        "unit": "Stück",
+        "price": "2,40",
+        "detail": ""
+    },
+    {
+        "id": "6009",
+        "product": "Sahneschnitten jede Sorte",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6010",
+        "product": "Eierlikörschokoschnitten",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": "mit Alkohol"
+    },
+    {
+        "id": "6011",
+        "product": "Käsesahneschnitten mit Pfirsichen",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6012",
+        "product": "Erdbeersahneschnitten",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6013",
+        "product": "Himbeersahneschnitten",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6014",
+        "product": "Erdbeerjoghurtschnitten",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6015",
+        "product": "Erdbeerschokoschnitten",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6016",
+        "product": "Joghurtfruchtschnitten",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6017",
+        "product": "Ananassahneschnitten",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6018",
+        "product": "Mandarinensahneschnitten gestürzt",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6019",
+        "product": "Nußschokoschnitten",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6020",
+        "product": "Amarettonußschnitte",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": "mit Alkohol"
+    },
+    {
+        "id": "6021",
+        "product": "Schwarzwälder Kirschschnitte",
+        "unit": "Stück",
+        "price": "2,80",
+        "detail": "mit Alkohol"
+    },
+    {
+        "id": "6022",
+        "product": "Schokokremtorte",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": "mit Alkohol"
+    },
+    {
+        "id": "6023",
+        "product": "Eierlikörkremtorte",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": "mit Alkohol"
+    },
+    {
+        "id": "6024",
+        "product": "Schwarzwälder Kirschtorte",
+        "unit": "Stück",
+        "price": "2,80",
+        "detail": "mit Alkohol"
+    },
+    {
+        "id": "6025",
+        "product": "Käsesahnetorte",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6026",
+        "product": "Joghurtfruchttorte",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6027",
+        "product": "Ananassahnetorte",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6028",
+        "product": "Himbeersahnetorte",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6029",
+        "product": "Erdbeersahnetorte",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6030",
+        "product": "Mandarinensahnetorte",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6031",
+        "product": "Schokosahnetorte",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6032",
+        "product": "Schokorumsahnetorte",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": "mit Alkohol"
+    },
+    {
+        "id": "6033",
+        "product": "Orangensahnetorte",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6034",
+        "product": "Haselnußsahnetorte",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": "mit Alkohol"
+    },
+    {
+        "id": "6035",
+        "product": "Eierlikörsahnetorte",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": "mit Alkohol"
+    },
+    {
+        "id": "6036",
+        "product": "Sachertorte a la Judith",
+        "unit": "Stück",
+        "price": "3,00",
+        "detail": "mit Alkohol"
+    },
+    {
+        "id": "6037",
+        "product": "Lebkuchentorte a la Judith",
+        "unit": "Stück",
+        "price": "3,00",
+        "detail": "mit Alkohol"
+    },
+    {
+        "id": "6038",
+        "product": "Obstsahneschnitte",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6039",
+        "product": "Tirami Su Schnitte",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6042",
+        "product": "Frühlingsschnitte",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "6043",
+        "product": "Haselnußkremtorte mit Alkohol",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": "mit Alkohol"
+    },
+    {
+        "id": "6045",
+        "product": "Schwedenkuchen",
+        "unit": "Stück",
+        "price": "2,40",
+        "detail": ""
+    },
+    {
+        "id": "6046",
+        "product": "Feuerwehrkuchen",
+        "unit": "Stück",
+        "price": "2,40",
+        "detail": ""
+    },
+    {
+        "id": "6047",
+        "product": "Schlumpfkuchen",
+        "unit": "Stück",
+        "price": "2,40",
+        "detail": ""
+    },
+    {
+        "id": "6048",
+        "product": "Raffaelotorte",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": "mit Alkohol"
+    },
+    {
+        "id": "7001",
+        "product": "Granatsplitter",
+        "unit": "Stück",
+        "price": "1,60",
+        "detail": "mit Alkohol, mit Fettglasur"
+    },
+    {
+        "id": "7002",
+        "product": "Schokobanane",
+        "unit": "Stück",
+        "price": "2,20",
+        "detail": "mit Fettglasur"
+    },
+    {
+        "id": "7003",
+        "product": "Nugatkremring",
+        "unit": "Stück",
+        "price": "2,00",
+        "detail": "mit Fettglasur"
+    },
+    {
+        "id": "7004",
+        "product": "Nussecke",
+        "unit": "Stück",
+        "price": "1,85",
+        "detail": "mit Fettglasur"
+    },
+    {
+        "id": "7005",
+        "product": "Kokosecke",
+        "unit": "Stück",
+        "price": "1,85",
+        "detail": "mit Fettglasur"
+    },
+    {
+        "id": "7006",
+        "product": "Dreiauge",
+        "unit": "Stück",
+        "price": "1,30",
+        "detail": ""
+    },
+    {
+        "id": "7008",
+        "product": "Flammende Herzen",
+        "unit": "Stück",
+        "price": "2,00",
+        "detail": "mit Fettglasur"
+    },
+    {
+        "id": "7009",
+        "product": "Kakaozungen",
+        "unit": "Stück",
+        "price": "2,00",
+        "detail": "mit Fettglasur"
+    },
+    {
+        "id": "7010",
+        "product": "Florentiner",
+        "unit": "Stück",
+        "price": "2,00",
+        "detail": ""
+    },
+    {
+        "id": "8001",
+        "product": "Butterbreze",
+        "unit": "Stück",
+        "price": "1,50",
+        "detail": ""
+    },
+    {
+        "id": "8002",
+        "product": "Butterlaugenstange",
+        "unit": "Stück",
+        "price": "1,80",
+        "detail": ""
+    },
+    {
+        "id": "8011",
+        "product": "Bierschinkensemmel",
+        "unit": "Stück",
+        "price": "2,20",
+        "detail": ""
+    },
+    {
+        "id": "8021",
+        "product": "Salamisemmel",
+        "unit": "Stück",
+        "price": "2,10",
+        "detail": ""
+    },
+    {
+        "id": "8031",
+        "product": "Käsesemmel",
+        "unit": "Stück",
+        "price": "2,10",
+        "detail": ""
+    },
+    {
+        "id": "8041",
+        "product": "Käseschinkenbaguette",
+        "unit": "Stück",
+        "price": "4,10",
+        "detail": ""
+    },
+    {
+        "id": "8051",
+        "product": "Käsebaguette",
+        "unit": "Stück",
+        "price": "3,75",
+        "detail": ""
+    },
+    {
+        "id": "8061",
+        "product": "Schinkenbaguette",
+        "unit": "Stück",
+        "price": "4,10",
+        "detail": ""
+    },
+    {
+        "id": "8071",
+        "product": "Salamikäsebaguette",
+        "unit": "Stück",
+        "price": "4,10",
+        "detail": ""
+    },
+    {
+        "id": "8142",
+        "product": "Schnitzelbaguette",
+        "unit": "Stück",
+        "price": "4,20",
+        "detail": ""
+    },
+    {
+        "id": "8091",
+        "product": "Eiersemmel",
+        "unit": "Stück",
+        "price": "2,30",
+        "detail": ""
+    },
+    {
+        "id": "8101",
+        "product": "Camembertsemmel",
+        "unit": "Stück",
+        "price": "2,40",
+        "detail": ""
+    },
+    {
+        "id": "8111",
+        "product": "Tomatemozzarellasemmel",
+        "unit": "Stück",
+        "price": "2,30",
+        "detail": ""
+    },
+    {
+        "id": "8121",
+        "product": "Käsebreze",
+        "unit": "Stück",
+        "price": "2,20",
+        "detail": ""
+    },
+    {
+        "id": "8131",
+        "product": "Putenbrustsemmel",
+        "unit": "Stück",
+        "price": "2,40",
+        "detail": ""
+    },
+    {
+        "id": "8141",
+        "product": "Obazderkornspitz",
+        "unit": "Stück",
+        "price": "2,30",
+        "detail": ""
+    },
+    {
+        "id": "8502",
+        "product": "Herzküchle",
+        "unit": "Stück",
+        "price": "1,60",
+        "detail": "mit Alkohol verbacken"
+    },
+    {
+        "id": "8503",
+        "product": "Muttertagsherz klein",
+        "unit": "ganz",
+        "price": "26,00",
+        "detail": "mit Alkohol"
+    },
+    {
+        "id": "8504",
+        "product": "Muttertagsherz groß",
+        "unit": "ganz",
+        "price": "35,00",
+        "detail": "mit Alkohol"
+    },
+    {
+        "id": "8505",
+        "product": "Plätzchen",
+        "unit": "100 g",
+        "price": "3,30",
+        "detail": ""
+    },
+    {
+        "id": "8506",
+        "product": "Plätzchen",
+        "unit": "200 g",
+        "price": "6,60",
+        "detail": ""
+    },
+    {
+        "id": "8507",
+        "product": "Plätzchen",
+        "unit": "350 g",
+        "price": "1,55",
+        "detail": ""
+    },
+    {
+        "id": "8508",
+        "product": "Plätzchen",
+        "unit": "700 g",
+        "price": "23,10",
+        "detail": ""
+    },
+    {
+        "id": "8509",
+        "product": "Plätzchen nach Gewicht",
+        "unit": "",
+        "price": "",
+        "detail": ""
+    },
+    {
+        "id": "8510",
+        "product": "Plätzchen K2",
+        "unit": "100 g",
+        "price": "3,80",
+        "detail": ""
+    },
+    {
+        "id": "8511",
+        "product": "Butterstollen",
+        "unit": "1 kg",
+        "price": "16,90",
+        "detail": ""
+    },
+    {
+        "id": "8512",
+        "product": "Quarkstollen",
+        "unit": "ganz",
+        "price": "5,00",
+        "detail": ""
+    },
+    {
+        "id": "8513",
+        "product": "Quarkstollen",
+        "unit": "halb",
+        "price": "2,50",
+        "detail": ""
+    },
+    {
+        "id": "8514",
+        "product": "Mohnstollen",
+        "unit": "ganz",
+        "price": "5,00",
+        "detail": ""
+    },
+    {
+        "id": "8515",
+        "product": "Mohnstollen",
+        "unit": "halb",
+        "price": "2,50",
+        "detail": ""
+    },
+    {
+        "id": "8516",
+        "product": "Nußstollen",
+        "unit": "ganz",
+        "price": "5,00",
+        "detail": ""
+    },
+    {
+        "id": "8517",
+        "product": "Nußstollen",
+        "unit": "halb",
+        "price": "2,50",
+        "detail": ""
+    },
+    {
+        "id": "8518",
+        "product": "Lebkuchen",
+        "unit": "Stück",
+        "price": "1,80",
+        "detail": ""
+    },
+    {
+        "id": "8519",
+        "product": "Lebkuchen",
+        "unit": "5er Pack",
+        "price": "9,00",
+        "detail": ""
+    },
+    {
+        "id": "8520",
+        "product": "Gewürzschnitten",
+        "unit": "Stück",
+        "price": "2,30",
+        "detail": ""
+    },
+    {
+        "id": "8521",
+        "product": "Herbstschnitten",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "8522",
+        "product": "Adventsschnitten",
+        "unit": "Stück",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "8525",
+        "product": "Schöne Gesichter",
+        "unit": "Stück",
+        "price": "2,00",
+        "detail": ""
+    },
+    {
+        "id": "8526",
+        "product": "Sahnekrapfen",
+        "unit": "Stück",
+        "price": "2,70",
+        "detail": ""
+    },
+    {
+        "id": "8527",
+        "product": "Neujahrsbrezen",
+        "unit": "Stück",
+        "price": "1,60",
+        "detail": ""
+    },
+    {
+        "id": "8528",
+        "product": "Osterlamm",
+        "unit": "ganz",
+        "price": "9,80",
+        "detail": ""
+    },
+    {
+        "id": "8529",
+        "product": "Osterbrot",
+        "unit": "ganz",
+        "price": "4,95",
+        "detail": ""
+    },
+    {
+        "id": "8530",
+        "product": "Hasenküchle",
+        "unit": "Stück",
+        "price": "1,60",
+        "detail": "mit Alk. Verbacken"
+    },
+    {
+        "id": "8531",
+        "product": "Schneeballen",
+        "unit": "Stück",
+        "price": "2,30",
+        "detail": "mit Alk. Verbacken"
+    },
+    {
+        "id": "8532",
+        "product": "Schneeballen",
+        "unit": "2 Stück",
+        "price": "4,30",
+        "detail": "mit Alk. Verbacken"
+    },
+    {
+        "id": "8533",
+        "product": "Schneeballen",
+        "unit": "3 Stück",
+        "price": "6,50",
+        "detail": "mit Alk. Verbacken"
+    },
+    {
+        "id": "8534",
+        "product": "Schneeballen",
+        "unit": "4 Stück",
+        "price": "8,50",
+        "detail": "mit Alk. Verbacken"
+    },
+    {
+        "id": "8535",
+        "product": "Martinsweck Dinkel",
+        "unit": "Stück",
+        "price": "1,10",
+        "detail": ""
+    },
+    {
+        "id": "8537",
+        "product": "Buchteln",
+        "unit": "Stück",
+        "price": "1,20",
+        "detail": ""
+    },
+    {
+        "id": "8538",
+        "product": "Herzchen aus Hefequarkteig",
+        "unit": "Stück",
+        "price": "1,70",
+        "detail": ""
+    },
+    {
+        "id": "8540",
+        "product": "Hühnerkekse",
+        "unit": "Stück",
+        "price": "0,50",
+        "detail": ""
+    },
+    {
+        "id": "8550",
+        "product": "Minitorte 18 cm Durchmesser",
+        "unit": "ganz",
+        "price": "23,60",
+        "detail": "je nach Sorte mit Alkohol"
+    },
+    {
+        "id": "8551",
+        "product": "Minitorte 22 cm Durchmesser",
+        "unit": "ganz",
+        "price": "32,00",
+        "detail": "je nach Sorte mit Alkohol"
+    },
+    {
+        "id": "8552",
+        "product": "Tortenboden",
+        "unit": "ganz",
+        "price": "6,95",
+        "detail": ""
+    },
+    {
+        "id": "8553",
+        "product": "Tortenboden",
+        "unit": "halb",
+        "price": "3,50",
+        "detail": ""
+    },
+    {
+        "id": "8554",
+        "product": "Altbrot  1 Sack",
+        "unit": "",
+        "price": "3,00",
+        "detail": ""
+    },
+    {
+        "id": "8555",
+        "product": "Semmelbrösel",
+        "unit": "500 g",
+        "price": "1,30",
+        "detail": ""
+    },
+    {
+        "id": "8556",
+        "product": "Semmelbrösel",
+        "unit": "5 kg Eimer",
+        "price": "9,90",
+        "detail": ""
+    },
+    {
+        "id": "8557",
+        "product": "Butterportion",
+        "unit": "",
+        "price": "0,50",
+        "detail": ""
+    },
+    {
+        "id": "8558",
+        "product": "Marmelade Portion",
+        "unit": "",
+        "price": "0,50",
+        "detail": ""
+    },
+    {
+        "id": "8559",
+        "product": "Honig Portion",
+        "unit": "",
+        "price": "0,50",
+        "detail": ""
+    },
+    {
+        "id": "8561",
+        "product": "Eis 1 Kugel",
+        "unit": "",
+        "price": "1,00",
+        "detail": ""
+    },
+    {
+        "id": "8562",
+        "product": "Eis mit Waffel und Beeren",
+        "unit": "",
+        "price": "3,85",
+        "detail": ""
+    },
+    {
+        "id": "8900",
+        "product": "Pfandrückgabe minus 0,25",
+        "unit": "",
+        "price": "0,25",
+        "detail": ""
+    },
+    {
+        "id": "9001",
+        "product": "Butter 250g",
+        "unit": "",
+        "price": "2,00",
+        "detail": ""
+    },
+    {
+        "id": "9010",
+        "product": "Konditortragetaschen",
+        "unit": "",
+        "price": "0,20",
+        "detail": ""
+    },
+    {
+        "id": "9011",
+        "product": "Hemdchentragetaschen",
+        "unit": "",
+        "price": "0,10",
+        "detail": ""
+    },
+    {
+        "id": "9017",
+        "product": "Becher leer Stück 300ml",
+        "unit": "",
+        "price": "0,25",
+        "detail": ""
+    },
+    {
+        "id": "9018",
+        "product": "Pappteller Stück",
+        "unit": "",
+        "price": "0,10",
+        "detail": ""
+    },
+    {
+        "id": "9022",
+        "product": "Mitarbeitergutschein",
+        "unit": "",
+        "price": "5,00",
+        "detail": ""
+    },
+    {
+        "id": "9110",
+        "product": "10€ Bäckerei Scheuerlein Gutschein",
+        "unit": "",
+        "price": "10,00",
+        "detail": ""
+    },
+    {
+        "id": "9115",
+        "product": "15€ Bäckerei Scheuerlein Gutschein",
+        "unit": "",
+        "price": "15,00",
+        "detail": ""
+    },
+    {
+        "id": "9125",
+        "product": "25€ Bäckerei Scheuerlein Gutschein",
+        "unit": "",
+        "price": "25,00",
+        "detail": ""
+    },
+    {
+        "id": "9150",
+        "product": "50€ Bäckerei Scheuerlein Gutschein",
+        "unit": "",
+        "price": "50,00",
+        "detail": ""
+    },
+    {
+        "id": "9200",
+        "product": "Kaffee S",
+        "unit": "",
+        "price": "2,00",
+        "detail": ""
+    },
+    {
+        "id": "9201",
+        "product": "Kaffee M",
+        "unit": "",
+        "price": "2,40",
+        "detail": ""
+    },
+    {
+        "id": "9202",
+        "product": "Kaffee L",
+        "unit": "",
+        "price": "3,80",
+        "detail": ""
+    },
+    {
+        "id": "9204",
+        "product": "Espresso einfach",
+        "unit": "",
+        "price": "1,80",
+        "detail": ""
+    },
+    {
+        "id": "9205",
+        "product": "Espresso doppelt",
+        "unit": "",
+        "price": "3,00",
+        "detail": ""
+    },
+    {
+        "id": "9206",
+        "product": "Espresso Macchiato",
+        "unit": "",
+        "price": "2,00",
+        "detail": ""
+    },
+    {
+        "id": "9207",
+        "product": "Cappu M",
+        "unit": "",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "9208",
+        "product": "Cappu L",
+        "unit": "",
+        "price": "3,90",
+        "detail": ""
+    },
+    {
+        "id": "9209",
+        "product": "Milchkaffee M",
+        "unit": "",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "9210",
+        "product": "Milchkaffee L",
+        "unit": "",
+        "price": "3,90",
+        "detail": ""
+    },
+    {
+        "id": "9211",
+        "product": "Latte",
+        "unit": "",
+        "price": "3,20",
+        "detail": ""
+    },
+    {
+        "id": "9212",
+        "product": "Schoki M",
+        "unit": "",
+        "price": "2,60",
+        "detail": ""
+    },
+    {
+        "id": "9213",
+        "product": "Schoki L",
+        "unit": "",
+        "price": "4,00",
+        "detail": ""
+    },
+    {
+        "id": "9214",
+        "product": "Wake up 1",
+        "unit": "",
+        "price": "4,10",
+        "detail": ""
+    },
+    {
+        "id": "9215",
+        "product": "Tee",
+        "unit": "",
+        "price": "2,00",
+        "detail": ""
+    },
+    {
+        "id": "9216",
+        "product": "Milch",
+        "unit": "",
+        "price": "1,50",
+        "detail": ""
+    },
+    {
+        "id": "9217",
+        "product": "Milchschaum",
+        "unit": "",
+        "price": "0,50",
+        "detail": ""
+    },
+    {
+        "id": "9218",
+        "product": "Sahneportion",
+        "unit": "",
+        "price": "0,70",
+        "detail": ""
+    },
+    {
+        "id": "9219",
+        "product": "Wake up 2",
+        "unit": "",
+        "price": "5,30",
+        "detail": ""
+    },
+    {
+        "id": "9220",
+        "product": "Eis kaffee",
+        "unit": "",
+        "price": "4,45",
+        "detail": ""
+    },
+    {
+        "id": "9221",
+        "product": "Eis schoki",
+        "unit": "",
+        "price": "4,45",
+        "detail": ""
+    },
+    {
+        "id": "9300",
+        "product": "Wasser",
+        "unit": "0,5 L",
+        "price": "1,50",
+        "detail": ""
+    },
+    {
+        "id": "9303",
+        "product": "Cola",
+        "unit": "0,5 L",
+        "price": "1,50",
+        "detail": ""
+    },
+    {
+        "id": "9304",
+        "product": "Cola light",
+        "unit": "0,5 L",
+        "price": "1,50",
+        "detail": ""
+    },
+    {
+        "id": "9305",
+        "product": "Spezzi",
+        "unit": "0,5 L",
+        "price": "1,50",
+        "detail": ""
+    },
+    {
+        "id": "9306",
+        "product": "Apfelschorle",
+        "unit": "0,5 L",
+        "price": "1,50",
+        "detail": ""
+    },
+    {
+        "id": "9307",
+        "product": "Capri Sonne",
+        "unit": "",
+        "price": "0,50",
+        "detail": ""
+    },
+    {
+        "id": "9308",
+        "product": "Kondesmilch",
+        "unit": "1 L",
+        "price": "1,40",
+        "detail": ""
+    },
+    {
+        "id": "9310",
+        "product": "H-Milch",
+        "unit": "1 L",
+        "price": "1,00",
+        "detail": ""
+    },
+    {
+        "id": "9314",
+        "product": "Meister Kaffe löslich",
+        "unit": "Glas",
+        "price": "4,79",
+        "detail": ""
+    },
+    {
+        "id": "9315",
+        "product": "Nudeln",
+        "unit": "250 g",
+        "price": "1,45",
+        "detail": ""
+    },
+    {
+        "id": "9316",
+        "product": "Der Noble löslich",
+        "unit": "Glas",
+        "price": "4,79",
+        "detail": ""
+    },
+    {
+        "id": "9318",
+        "product": "Filterpapier Gr. 4",
+        "unit": "Pack",
+        "price": "0,70",
+        "detail": ""
+    },
+    {
+        "id": "9323",
+        "product": "Kaffesahnefläschchen",
+        "unit": "",
+        "price": "0,90",
+        "detail": ""
+    },
+    {
+        "id": "9324",
+        "product": "Zwieback",
+        "unit": "",
+        "price": "1,50",
+        "detail": ""
+    },
+    {
+        "id": "9325",
+        "product": "Zucker 1 kg",
+        "unit": "",
+        "price": "1,50",
+        "detail": ""
+    },
+    {
+        "id": "9326",
+        "product": "Salz jodiert, 500 g",
+        "unit": "",
+        "price": "1,50",
+        "detail": ""
+    },
+    {
+        "id": "9339",
+        "product": "Mehl 1 kg",
+        "unit": "",
+        "price": "1,10",
+        "detail": ""
+    },
+    {
+        "id": "9327",
+        "product": "Schinkenwürstchen im Glas",
+        "unit": "",
+        "price": "2,95",
+        "detail": ""
+    },
+    {
+        "id": "9328",
+        "product": "Tomatenhering",
+        "unit": "",
+        "price": "1,95",
+        "detail": ""
+    },
+    {
+        "id": "9329",
+        "product": "Brathering",
+        "unit": "",
+        "price": "2,95",
+        "detail": ""
+    },
+    {
+        "id": "9331",
+        "product": "Rekord Waffelmischung",
+        "unit": "",
+        "price": "2,95",
+        "detail": ""
+    },
+    {
+        "id": "9332",
+        "product": "Rekord Keksmischung",
+        "unit": "",
+        "price": "2,95",
+        "detail": ""
+    },
+    {
+        "id": "9333",
+        "product": "Alpenmilchschokolade",
+        "unit": "",
+        "price": "0,65",
+        "detail": ""
+    },
+    {
+        "id": "9334",
+        "product": "Zartbitterschokolade",
+        "unit": "",
+        "price": "0,65",
+        "detail": ""
+    },
+    {
+        "id": "9335",
+        "product": "Euka menthol",
+        "unit": "",
+        "price": "0,90",
+        "detail": ""
+    },
+    {
+        "id": "9336",
+        "product": "Goldbären Haribo 100 g",
+        "unit": "",
+        "price": "0,70",
+        "detail": ""
+    },
+    {
+        "id": "9337",
+        "product": "Milka schokolade",
+        "unit": "",
+        "price": "1,20",
+        "detail": ""
+    },
+    {
+        "id": "9338",
+        "product": "Nimm 2",
+        "unit": "",
+        "price": "1,30",
+        "detail": ""
+    },
+    {
+        "id": "9350",
+        "product": "Becher leer 400 ml",
+        "unit": "",
+        "price": "0,30",
+        "detail": ""
+    },
+    {
+        "id": "9351",
+        "product": "Deckel für Becher",
+        "unit": "",
+        "price": "0,10",
+        "detail": ""
+    },
+    {
+        "id": "A",
+        "product": "beste Wirtschaftlichkeit",
+        "unit": "",
+        "price": "grün",
+        "detail": ""
+    },
+    {
+        "id": "B",
+        "product": "gute Wirtschaftlichkeit",
+        "unit": "",
+        "price": "blau",
+        "detail": ""
+    },
+    {
+        "id": "C",
+        "product": "mittlere Wirtschaftlichkeit",
+        "unit": "",
+        "price": "rosa",
+        "detail": ""
+    },
+    {
+        "id": "D",
+        "product": "wenig Wirtschaftlichkeit",
+        "unit": "",
+        "price": "lila",
+        "detail": ""
+    },
+    {
+        "id": "K",
+        "product": "keine Wertung",
+        "unit": "",
+        "price": "weiß",
+        "detail": ""
+    }
+]

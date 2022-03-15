@@ -1,0 +1,352 @@
+id,product,unit,price,detail
+1000,Kaisersemmel vom Vortag,,"0,10",
+1001,Kaisersemmel,Stück,"0,40",aus Weizenmehl
+1002,Mohnsemmeln,Stück,"0,55",aus Weizenmehl
+1003,Sesamsemmeln,Stück,"0,55",aus Weizenmehl
+1004,Schrippen,Stück,"0,50",aus Weizenmehl
+1005,Laugensemmeln,Stück,"0,60",aus Weizenmehl
+1006,Klosterer,Stück,"0,65",aus Weizenmehl
+1007,Roggensemmel,Stück,"0,70",aus Roggenmehl
+1008,Käsesemmel,Stück,"1,00","aus Weizenmehl, mit Gouda"
+1009,Kornspitz,Stück,"0,65",Dinkelmehrkorn
+1010,Laugenbrezen,Stück,"0,70",aus Weizenmehl
+1011,Weltmeistersemmeln,Stück,"0,80",Mehrkorn
+1012,Kürbiskernsemmeln,Stück,"0,80",Mehrkorn
+1013,Hafersemmeln,Stück,"0,80",Dinkelmehrkorn
+1014,Zwillingsweck,Stück,"0,80",Dinkelmehrkorn
+1015,Dinkelspitz,Stück,"0,80",Dinkelmehrkorn
+1016,Bauernsemmel,Stück,"1,20",Roggen u. Weizen
+1020,Salzstangen,Stück,"0,60",aus Weizenmehl
+1021,Mohnstangen,Stück,"0,60",aus Weizenmehl
+1022,Käsestangen,Stück,"1,40","aus Weizenmehl, mit Gouda"
+1023,Schinkenstangen,Stück,"1,50","aus Weizenmehl, mit Gouda"
+1024,Laugenstangen,Stück,"1,00",aus Weizenmehl
+1025,Laugenmohnstange,Stück,"1,10",aus Weizenmehl
+1026,Laugensesamstange,Stück,"1,10",aus Weizenmehl
+1027,Käselaugenstangen,Stück,"1,70",aus Weizenmehl
+1028,Knusperstangen,Stück,"1,70",aus Weizenmehl
+1029,Pizzazungen,Stück,"2,50","aus Weizenmehl, mit Gouda"
+1950,Partylaugenstängle,Stück,"0,70",aus Weizenmehl
+1951,Partylaugensemmel,Stück,"0,50",aus Weizenmehl
+1952,Partykäsestängle,Stück,"1,00","aus Weizenmehl, mit Gouda"
+1953,Partykaiser,Stück,"0,30",aus Weizenmehl
+1954,Partymohnsemmele,Stück,"0,40",aus Weizenmehl
+2001,Weißenbr. Landbrot,500 g,"1,90",75 R / 25 W mit Natursauerteig
+2002,Weißenbr. Landbrot,1 kg,"3,80",75 R / 25 W mit Natursauerteig
+2003,Roggenbrot,1 kg,"3,80",95 R / 5 W mit Natursauerteig
+2004,Roggenbrot,"1,5 kg","5,70",95 R / 5 W mit Natursauerteig
+2005,Gassenhauer,1 kg,"3,35",70 R / 30 W mit mildem Sauerteig
+2006,Krustenbrot,750 g,"2,95",75 R / 25 W mit Natursauerteig
+2007,AOK - Brot,1 kg,"4,80",Vollkornbrot mit Natursauerteig
+2008,Frühlingsbrot,750 g,"4,20",Mehrkornmischbrot
+2009,Zwiebelbrot,750 g,"4,00",
+2010,Schinkenbrot,750 g,"4,50",
+2014,Sonnenblumenkernbrot,750 g,"4,20",
+2015,Weißbrot,500 g,"2,65",
+2016,Stangenweißbrot,Stück,"2,65",
+2017,Kastenweißbrot,Stück,"2,65",
+2018,kleine Stangen,Stück,"1,75",
+2019,Baguettesemmeln,Stück,"0,90",
+2020,Dinkelmehrkornbaguette,Stück,"3,20",
+2021,Brot nach Gewicht,,,
+2022,Weizensemmelrad,,"15,00",
+2023,Roggensemmelrad,,"22,00",
+2101,Landbrot,250 g,"1,05",
+2102,Landbrot,500 g,"1,90",
+2103,Roggenbrot,500 g,"1,90",
+2104,Roggenbrot,750 g,"2,85",
+2105,Gassenhauer,500 g,"1,70",
+2106,Krustenbrot,375 g,"1,50",
+2107,AOK - Brot,500 g,"2,40",
+2108,Frühlingsbrot,375 g,"2,10",
+2109,Zwiebelbrot,375 g,"2,00",
+2110,Schinkenbrot,375 g,"2,25",
+2114,Sonnenblumenkernbrot,375 g,"2,10",
+2115,Weißbrot,250 g,"1,35",
+2116,Stangenweißbrot,halb,"1,35",
+2117,Kastenweißbrot,halb,"1,35",
+2118,kleine Stangen,halb,"0,90",
+2120,Dinkelmehrkornbaguette,halb,"1,60",
+2121,Omas Bauernlaib,3 kg,"12,60",
+2122,Omas Bauernlaib,"1,5 kg","6,30",
+2123,Omas Bauernlaib,750 g,"3,15",
+2124,Omas Bauernlaib lang,1 kg,"4,20",
+2125,Dinkelvollkornbrot,1 kg,"5,20",
+2126,Dinklevollkornbrot,500 g,"2,60",
+3001,Apfeltasche,Stück,"1,80",
+3002,Quarktasche,Stück,"1,80",
+3003,Kirschvanilleplunder,Stück,"1,80",
+3005,Schokocroissant,Stück,"1,70",mit Fettglasur
+3006,Butterhörnchen,Stück,"1,30",
+3007,Mohnschnecke,Stück,"1,70",
+3008,Nußschnecke,Stück,"1,70",
+3010,Erdbeerschokocremeplunder,Stück,"2,40",
+3011,Aprikosenplunder,Stück,"1,70",
+3012,Johannisbeerschnecke,Stück,"1,80",
+3013,Fruchtplunder,Stück,"2,40",
+3016,Nussbreze,Stück,"1,80",
+3020,Muffin,Stück,"1,40",mit Fettglasur
+3021,Amerikaner,Stück,"1,40",mit Fettglasur
+3022,Donut,Stück,"1,40",mit Fettglasur
+3030,Küchle groß,Stück,"1,65",mit Alk. Verbacken
+3031,Küchle mittel,Stück,"1,20",mit Alk. Verbacken
+3032,Miniküchle,Stück,"0,90",mit Alk. Verbacken
+3033,Krapfen,Stück,"1,50",
+3034,Kameruner,Stück,"1,50",
+4000,Streuselkuchen,Stück,"3,00",
+4001,Hefenudel,ganz,"2,90",
+4002,Hefezopf,ganz,"4,50",
+4003,Nußzopf,ganz,"6,60",
+4004,Quarkzopf,ganz,"6,50",
+4005,Mohnzopf groß,ganz,"14,30",
+4006,Nusszopf groß,ganz,"17,65",
+4008,Hefezopf groß,ganz,"9,60",
+4010,Quarkbällchen,Stück,"0,60",
+4013,Quarkbällchen , 3er Pack,"1,65",
+4016,Quarkbällchen, 6er Pack,"3,30",
+4019,Quarkbällchen,9er Pack,"4,95",
+4020,Feuerspatzen,Stück,"1,20",
+4022,Feuerspatzen, 2er Pack,"2,20",
+4100,Streuselkuchen,Stück halb,"1,50",
+4101,Hefenudel,halb,"1,45",
+4102,Hefezopf,halb,"2,25",
+4103,Nußzopf,halb,"3,30",
+4104,Quarkzopf,halb,"3,15",
+4105,Mohnzopf groß,halb,"7,15",
+4106,Nusszopf groß,halb,"8,85",
+4501,Marmorkuchen,Stück,"1,40",mit Fettglasur
+4502,Zitronenkuchen,Stück,"1,40",mit Fettglasur
+4503,Nußkuchen,Stück,"1,60",mit Fettglasur
+4504,Rotweinkuchen,Stück,"1,60",mit Alkohol
+4505,Eierlikörkuchen,Stück,"1,60",mit Alkohol
+5001,Mohnstriezel,Stück,"1,50",
+5002,Butterkuchen,Stück,"2,10",
+5003,"Käsekuchen hoch, rund",Stück,"2,40",
+5004,"Käsemandarinenkuchen, Blech",Stück,"2,20",
+5005,Käsekuchen mit Johannisbeeren,Stück,"2,20",
+5006,Käsekuchen mit Butterguss,Stück,"2,20",
+5007,Russischer Zupfkuchen,Stück,"2,20",
+5008,Walnusskarottenkuchen,Stück,"2,60",
+5009,Himbeerkuchen,Stück,"2,20",
+5010,Erdbeerkuchen,Stück,"2,40",
+5011,gemischter Obstkuchen,Stück,"2,20",
+5012,Schokokirschkuchen,Stück,"2,20","mit Alkohol, mit Fettglasur"
+5013,Donauwelle,Stück,"2,40","mit Alkohol, mit Fettglasur"
+5014,Frankfurther Kranz,Stück,"2,40",mit Alkohol
+6044,Schokobutterkremkranz mit Kirschen,Stück,"2,60",mit Alkohol
+5015,Kirschjoghurtkuchen,Stück,"2,20",
+5016,Rhabarberkuchen,Stück,"2,20",
+5017,Kokosaprikosenkuchen,Stück,"2,30",
+5018,Hawaikuchen,Stück,"2,10",
+5019,Aprikosennußkuchen,Stück,"2,30",
+5020,Apfelkuchen gedeckt,Stück,"2,30",
+5021,Apfelkuchen mit Makronengitter,Stück,"2,50",
+5022,Apfelkuchen auf Hefeteig,Stück,"2,30",
+5023,Kirschkuchen auf Hefeteig,Stück,"2,30",
+5024,Zwetschgenkuchen auf Hefeteig,Stück,"2,30",
+5028,Aprikosenkuchen auf Hefeteig,Stück,"2,30",
+5025,Apfelweinkuchen,Stück,"2,50",mit alk. Verbacken
+5026,Apfelschlupfkuchen,Stück,"1,90",
+5027,Kirschschlupfkuchen,Stück,"1,90",
+5030,Beerenkuchen,Stück,"2,20",
+5031,Aprikosen-Käse-Mohnkuchen,Stück,"2,40",
+5032,Amarettokirschkuchen,Stück,"2,50",mit Alk. Verbacken
+5033,Rhabarber käse kuchen,Stück,"2,20",
+5034,Heidelbeerkuchen,Stück,"2,20",
+5035,Mohnschnitten auf Hefeteig,Stück,"2,30",
+5036,Feuerwehrkuchen,Stück,"2,50",
+6001,Zitronenrolle,Stück,"2,10",ggf. mit Fettglasur
+6002,Himbeerrolle,Stück,"2,10",ggf. mit Fettglasur
+6003,Erdbeerrolle,Stück,"2,10",ggf. mit Fettglasur
+6004,Cappuccinosahnerolle,Stück,"2,10",ggf. mit Fettglasur
+6005,Mandarinensahnerolle,Stück,"2,10",ggf. mit Fettglasur
+6006,Bienenstich,Stück,"2,30",
+6007,Schlotfeger,Stück,"1,30",
+6008,Windbeutel,Stück,"2,40",
+6009,Sahneschnitten jede Sorte,Stück,"2,60",
+6010,Eierlikörschokoschnitten,Stück,"2,60",mit Alkohol
+6011,Käsesahneschnitten mit Pfirsichen,Stück,"2,60",
+6012,Erdbeersahneschnitten,Stück,"2,60",
+6013,Himbeersahneschnitten,Stück,"2,60",
+6014,Erdbeerjoghurtschnitten,Stück,"2,60",
+6015,Erdbeerschokoschnitten,Stück,"2,60",
+6016,Joghurtfruchtschnitten,Stück,"2,60",
+6017,Ananassahneschnitten,Stück,"2,60",
+6018,Mandarinensahneschnitten gestürzt,Stück,"2,60",
+6019,Nußschokoschnitten,Stück,"2,60",
+6020,Amarettonußschnitte,Stück,"2,60",mit Alkohol
+6021,Schwarzwälder Kirschschnitte,Stück,"2,80",mit Alkohol
+6022,Schokokremtorte,Stück,"2,60",mit Alkohol
+6023,Eierlikörkremtorte,Stück,"2,60",mit Alkohol
+6024,Schwarzwälder Kirschtorte,Stück,"2,80",mit Alkohol
+6025,Käsesahnetorte,Stück,"2,60",
+6026,Joghurtfruchttorte,Stück,"2,60",
+6027,Ananassahnetorte,Stück,"2,60",
+6028,Himbeersahnetorte,Stück,"2,60",
+6029,Erdbeersahnetorte,Stück,"2,60",
+6030,Mandarinensahnetorte,Stück,"2,60",
+6031,Schokosahnetorte,Stück,"2,60",
+6032,Schokorumsahnetorte,Stück,"2,60",mit Alkohol
+6033,Orangensahnetorte,Stück,"2,60",
+6034,Haselnußsahnetorte,Stück,"2,60",mit Alkohol
+6035,Eierlikörsahnetorte,Stück,"2,60",mit Alkohol
+6036,Sachertorte a la Judith,Stück,"3,00",mit Alkohol
+6037,Lebkuchentorte a la Judith,Stück,"3,00",mit Alkohol
+6038,Obstsahneschnitte,Stück,"2,60",
+6039,Tirami Su Schnitte,Stück,"2,60",
+6042,Frühlingsschnitte,Stück,"2,60",
+6043,Haselnußkremtorte mit Alkohol,Stück,"2,60",mit Alkohol
+6045,Schwedenkuchen,Stück,"2,40",
+6046,Feuerwehrkuchen,Stück,"2,40",
+6047,Schlumpfkuchen,Stück,"2,40",
+6048,Raffaelotorte,Stück,"2,60",mit Alkohol
+7001,Granatsplitter,Stück,"1,60","mit Alkohol, mit Fettglasur"
+7002,Schokobanane,Stück,"2,20",mit Fettglasur
+7003,Nugatkremring,Stück,"2,00",mit Fettglasur
+7004,Nussecke,Stück,"1,85",mit Fettglasur
+7005,Kokosecke,Stück,"1,85",mit Fettglasur
+7006,Dreiauge,Stück,"1,30",
+7008,Flammende Herzen,Stück,"2,00",mit Fettglasur
+7009,Kakaozungen,Stück,"2,00",mit Fettglasur
+7010,Florentiner,Stück,"2,00",
+8001,Butterbreze,Stück,"1,50",
+8002,Butterlaugenstange,Stück,"1,80",
+8011,Bierschinkensemmel,Stück,"2,20",
+8021,Salamisemmel,Stück,"2,10",
+8031,Käsesemmel,Stück,"2,10",
+8041,Käseschinkenbaguette,Stück,"4,10",
+8051,Käsebaguette,Stück,"3,75",
+8061,Schinkenbaguette,Stück,"4,10",
+8071,Salamikäsebaguette,Stück,"4,10",
+8142,Schnitzelbaguette,Stück,"4,20",
+8091,Eiersemmel,Stück,"2,30",
+8101,Camembertsemmel,Stück,"2,40",
+8111,Tomatemozzarellasemmel,Stück,"2,30",
+8121,Käsebreze,Stück,"2,20",
+8131,Putenbrustsemmel,Stück,"2,40",
+8141,Obazderkornspitz,Stück,"2,30",
+8502,Herzküchle,Stück,"1,60",mit Alkohol verbacken
+8503,Muttertagsherz klein,ganz,"26,00",mit Alkohol
+8504,Muttertagsherz groß,ganz,"35,00",mit Alkohol
+8505,Plätzchen,100 g,"3,30",
+8506,Plätzchen,200 g,"6,60",
+8507,Plätzchen,350 g,"1,55",
+8508,Plätzchen,700 g,"23,10",
+8509,Plätzchen nach Gewicht,,,
+8510,Plätzchen K2,100 g,"3,80",
+8511,Butterstollen,1 kg,"16,90",
+8512,Quarkstollen,ganz,"5,00",
+8513,Quarkstollen,halb,"2,50",
+8514,Mohnstollen,ganz,"5,00",
+8515,Mohnstollen,halb,"2,50",
+8516,Nußstollen,ganz,"5,00",
+8517,Nußstollen,halb,"2,50",
+8518,Lebkuchen,Stück,"1,80",
+8519,Lebkuchen,5er Pack,"9,00",
+8520,Gewürzschnitten,Stück,"2,30",
+8521,Herbstschnitten,Stück,"2,60",
+8522,Adventsschnitten,Stück,"2,60",
+8525,Schöne Gesichter,Stück,"2,00",
+8526,Sahnekrapfen,Stück,"2,70",
+8527,Neujahrsbrezen,Stück,"1,60",
+8528,Osterlamm,ganz,"9,80",
+8529,Osterbrot,ganz,"4,95",
+8530,Hasenküchle,Stück,"1,60",mit Alk. Verbacken
+8531,Schneeballen,Stück,"2,30",mit Alk. Verbacken
+8532,Schneeballen,2 Stück,"4,30",mit Alk. Verbacken
+8533,Schneeballen,3 Stück,"6,50",mit Alk. Verbacken
+8534,Schneeballen,4 Stück,"8,50",mit Alk. Verbacken
+8535,Martinsweck Dinkel,Stück,"1,10",
+8537,Buchteln,Stück,"1,20",
+8538,Herzchen aus Hefequarkteig,Stück,"1,70",
+8540,Hühnerkekse,Stück,"0,50",
+8550,Minitorte 18 cm Durchmesser,ganz,"23,60",je nach Sorte mit Alkohol
+8551,Minitorte 22 cm Durchmesser,ganz,"32,00",je nach Sorte mit Alkohol
+8552,Tortenboden,ganz,"6,95",
+8553,Tortenboden,halb,"3,50",
+8554,Altbrot  1 Sack,,"3,00",
+8555,Semmelbrösel,500 g,"1,30",
+8556,Semmelbrösel,5 kg Eimer,"9,90",
+8557,Butterportion,,"0,50",
+8558,Marmelade Portion,,"0,50",
+8559,Honig Portion,,"0,50",
+8561,Eis 1 Kugel,,"1,00",
+8562,Eis mit Waffel und Beeren,,"3,85",
+8900,"Pfandrückgabe minus 0,25",,"0,25",
+9001,Butter 250g,,"2,00",
+9010,Konditortragetaschen,,"0,20",
+9011,Hemdchentragetaschen,,"0,10",
+9017,Becher leer Stück 300ml,,"0,25",
+9018,Pappteller Stück,,"0,10",
+9022,Mitarbeitergutschein,,"5,00",
+9110,10€ Bäckerei Scheuerlein Gutschein,,"10,00",
+9115,15€ Bäckerei Scheuerlein Gutschein,,"15,00",
+9125,25€ Bäckerei Scheuerlein Gutschein,,"25,00",
+9150,50€ Bäckerei Scheuerlein Gutschein,,"50,00",
+9200,Kaffee S,,"2,00",
+9201,Kaffee M,,"2,40",
+9202,Kaffee L,,"3,80",
+9204,Espresso einfach,,"1,80",
+9205,Espresso doppelt,,"3,00",
+9206,Espresso Macchiato,,"2,00",
+9207,Cappu M,,"2,60",
+9208,Cappu L,,"3,90",
+9209,Milchkaffee M,,"2,60",
+9210,Milchkaffee L,,"3,90",
+9211,Latte,,"3,20",
+9212,Schoki M,,"2,60",
+9213,Schoki L,,"4,00",
+9214,Wake up 1,,"4,10",
+9215,Tee,,"2,00",
+9216,Milch,,"1,50",
+9217,Milchschaum,,"0,50",
+9218,Sahneportion,,"0,70",
+9219,Wake up 2,,"5,30",
+9220,Eis kaffee,,"4,45",
+9221,Eis schoki,,"4,45",
+9300,Wasser,"0,5 L","1,50",
+9303,Cola,"0,5 L","1,50",
+9304,Cola light,"0,5 L","1,50",
+9305,Spezzi,"0,5 L","1,50",
+9306,Apfelschorle,"0,5 L","1,50",
+9307,Capri Sonne,,"0,50",
+9308,Kondesmilch,1 L,"1,40",
+9310,H-Milch,1 L,"1,00",
+9314,Meister Kaffe löslich,Glas,"4,79",
+9315,Nudeln,250 g,"1,45",
+9316,Der Noble löslich,Glas,"4,79",
+9318,Filterpapier Gr. 4,Pack,"0,70",
+9323,Kaffesahnefläschchen,,"0,90",
+9324,Zwieback,,"1,50",
+9325,Zucker 1 kg,,"1,50",
+9326,"Salz jodiert, 500 g",,"1,50",
+9339,Mehl 1 kg,,"1,10",
+9327,Schinkenwürstchen im Glas,,"2,95",
+9328,Tomatenhering,,"1,95",
+9329,Brathering,,"2,95",
+9331,Rekord Waffelmischung,,"2,95",
+9332,Rekord Keksmischung,,"2,95",
+9333,Alpenmilchschokolade,,"0,65",
+9334,Zartbitterschokolade,,"0,65",
+9335,Euka menthol,,"0,90",
+9336,Goldbären Haribo 100 g,,"0,70",
+9337,Milka schokolade,,"1,20",
+9338,Nimm 2,,"1,30",
+9350,Becher leer 400 ml,,"0,30",
+9351,Deckel für Becher,,"0,10",
+
+
+
+
+
+
+
+
+
+
+A,beste Wirtschaftlichkeit,,grün,
+B,gute Wirtschaftlichkeit,,blau,
+C,mittlere Wirtschaftlichkeit,,rosa,
+D,wenig Wirtschaftlichkeit,,lila,
+
+K,keine Wertung,,weiß,
